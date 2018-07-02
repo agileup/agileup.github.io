@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>agileup</title>
-    <link>http://agileup.me/</link>
+    <link>https://agileup.github.io/</link>
     <description>Recent content on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Jul 2018 22:55:05 +0900</lastBuildDate>
     
-	<atom:link href="http://agileup.me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://agileup.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://agileup.me/about/</link>
+      <link>https://agileup.github.io/about/</link>
       <pubDate>Sun, 01 Jul 2018 22:55:05 +0900</pubDate>
       
-      <guid>http://agileup.me/about/</guid>
+      <guid>https://agileup.github.io/about/</guid>
       <description>MINKI CHOI Republic of Korea
 agileup.AT.gmail.com
 SUMMARY  Strong knowledge of developing web services both server and client side Familiar with object oriented architecture and MVC model based framework Experience in agile practice including TDD, pair programming Ability to develop prototypes quickly and handle multiple tasks Passionate about learning new concepts and discussing technology  EDUCATION Bachelor of Computer Science

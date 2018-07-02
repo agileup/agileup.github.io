@@ -3,22 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://agileup.me/about/</loc>
+    <loc>https://agileup.github.io/about/</loc>
     <lastmod>2018-07-01T22:55:05+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://agileup.me/categories/</loc>
+    <loc>https://agileup.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://agileup.me/tags/</loc>
+    <loc>https://agileup.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://agileup.me/</loc>
+    <loc>https://agileup.github.io/</loc>
     <lastmod>2018-07-01T22:55:05+09:00</lastmod>
     <priority>0</priority>
   </url>
