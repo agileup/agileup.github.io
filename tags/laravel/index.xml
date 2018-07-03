@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Laravel on agileup</title>
+    <link>https://agileup.github.io/tags/laravel/</link>
+    <description>Recent content in Laravel on agileup</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Feb 2014 21:44:55 +0900</lastBuildDate>
+    
+	<atom:link href="https://agileup.github.io/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Laravel Overview</title>
+      <link>https://agileup.github.io/posts/2014-02-27-laravel-overview/</link>
+      <pubDate>Thu, 27 Feb 2014 21:44:55 +0900</pubDate>
+      
+      <guid>https://agileup.github.io/posts/2014-02-27-laravel-overview/</guid>
+      <description>  https://laravel.com/ Taylor Otwell  특징  인증, 라우팅, 세션, 캐싱 등 Composer, FrontController, MVC, IOC-DI, UnitTest  설치  Composer 사용 git clone  설정  app.php, database.php
+ VirtualHost 설정 &amp;gt; 프로젝트폴더/public
+ app/storage 폴더 권한 777
+  MVC Routing  app/route.php method, filter, group 지원 - 문서  Artisan CLI  php artisan serve php artisan route php artisan controller:make [컨트롤러이름]  Study 발표자료  정양파님 - Route 발표자료 윤종선님 - Form &amp;amp; View 발표자료  </description>
+    </item>
+    
+  </channel>
+</rss>

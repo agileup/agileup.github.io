@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="agileup">
+    <meta name="description" content="MK Style">
+    <meta name="keywords" content="blog,developer,personal,note">
+
+    <base href="https://agileup.github.io">
+    <title>
+  [AngularJS] 기초 간단 정리 · agileup
+</title>
+
+    <link rel="canonical" href="https://agileup.github.io/posts/2014-06-12-angularjs-basic/">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Nanum+Gothic:400,700|Nanum+Myeongjo:400,700&amp;subset=korean">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://agileup.github.io/css/style.min.css">
+
+    
+
+    
+      <link rel="stylesheet" href="https://agileup.github.io/css/custom.css">
+    
+      <link rel="stylesheet" href="https://agileup.github.io/css/syntax.css">
+    
+
+    <link rel="icon" type="image/png" href="https://agileup.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://agileup.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.42.2" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://agileup.github.io">
+      agileup
+    </a>
+    
+    <ul class="navigation-list  float-right ">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://agileup.github.io/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://agileup.github.io/about/">About</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">[AngularJS] 기초 간단 정리</h1>
+      <h2 class="date">June 12, 2014</h2>
+
+      
+    </header>
+
+    
+
+<h3 id="동작-순서">동작 순서</h3>
+
+<ol>
+<li>브라우저가 html을 로드 (DOM을 파싱한다.)</li>
+<li>Angular.js를 로드한다</li>
+<li>DOM Content Loaded Event를 기다린다.</li>
+<li>DOM이 모두 로드되면 ng-app 지시자를 찾는다.</li>
+<li>ng-app에서는 dependency injection 을 위해 사용되는 $injector를 생성한다.</li>
+<li>injector 지시어는 어플리케이션의 모델을 위한 컨텍스트가 되는 루트 스코프를 생성한다.</li>
+<li>최종적으로 ng-app을 기준으로 하위DOM을 컴파일하고 rootScope와 링크시킨다.</li>
+</ol>
+
+<h3 id="기본-개념">기본 개념</h3>
+
+<ol>
+<li><p>Scope</p>
+
+<ul>
+<li>Scope는 모델 변경을 감지하고 표현하기위한 책임을 갖는다</li>
+<li>Scope는 DOM 구조와 가깝게 하이어라키 구조를 갖는다</li>
+</ul></li>
+
+<li><p>Model</p>
+
+<ul>
+<li>모델은 화면 템플릿에 합쳐지는 데이터를 가지고 있는 일반 자바스크립트 객체이다. (데이터라고 생각하면 된다.)</li>
+<li>Scope는 항상 모델을 참조하고 있다.</li>
+</ul></li>
+
+<li><p>View</p>
+
+<ul>
+<li>템플릿 스트링과 모델을 합쳐서 HTML을 만들고 DOM으로 해석되어 Browser에 표현된다 .</li>
+<li>Angular는 템플릿이 HTML이어서 바로 DOM으로 해석되고 DOM안에 directive가 템플릿 엔진인 $compile지시어를 통해 $watch를 설정하고 모델의 변경을 계속 감시하게 된다.</li>
+<li>View는 템플릿으로 Scope의 투영체이고, Scope는 Model과 View의 연결하며 controller로 이벤트를 보내는 역할을 한다.</li>
+</ul></li>
+
+<li><p>Controller</p>
+
+<ul>
+<li>Controller는 View뒤에서 반드시 수행하는 코드이다.</li>
+<li>Controller 역할은 모델을 생성하고 콜백 메소드를 가지고 View로 퍼블리싱을 담당한다 .</li>
+<li>Controller 는 자바스크립트이고 업무적 행위를 정의한다. 또한 DOM rendering 정보가 일체 없다 .</li>
+</ul></li>
+
+<li><p>Directives (지시어)</p>
+
+<ul>
+<li>지시어는 HTML 을 확장하여 주고 행위를 일으키는 주체이다 .</li>
+<li>예를들어 앞의 예제에서 보았듯이 데이터 바인딩을 위한 이중 중괄호 표기{{}}, 컨트롤러가 뷰의 어느 부분을 감독할지를 지정하는 ng-controller, 인풋을 해당 모델의 구성물에 바인딩하는 ng-model 모두 Directive를 이용한 확장 문법이다.</li>
+</ul></li>
+</ol>
+
+<h3 id="dependency-injection">Dependency Injection</h3>
+
+<ul>
+<li><a href="https://github.com/angular/angular.js/wiki/Understanding-Dependency-Injection">https://github.com/angular/angular.js/wiki/Understanding-Dependency-Injection</a></li>
+</ul>
+
+<h3 id="yeoman">Yeoman</h3>
+
+<ul>
+<li><a href="http://www.thinkster.io/angularjs/eqq96ECqkT/1-getting-your-project-set-up-with-yeoman">http://www.thinkster.io/angularjs/eqq96ECqkT/1-getting-your-project-set-up-with-yeoman</a></li>
+<li><a href="http://yeoman.io/codelab/keep-going.html">http://yeoman.io/codelab/keep-going.html</a></li>
+</ul>
+
+<h3 id="unit-test">Unit Test</h3>
+
+<ul>
+<li><a href="http://andyshora.com/unit-testing-best-practices-angularjs.html">http://andyshora.com/unit-testing-best-practices-angularjs.html</a></li>
+</ul>
+
+<h3 id="meanio">MEANio</h3>
+
+<ul>
+<li><a href="http://mean.io/#!/docs">http://mean.io/#!/docs</a></li>
+</ul>
+
+<h3 id="with-bootstrap">with Bootstrap</h3>
+
+<ul>
+<li><a href="http://angular-ui.github.io/bootstrap/">http://angular-ui.github.io/bootstrap/</a></li>
+</ul>
+
+<h3 id="참고">참고</h3>
+
+<ul>
+<li><a href="http://blog.whydoifollow.com/post/angularjs-where-to-start">http://blog.whydoifollow.com/post/angularjs-where-to-start</a></li>
+<li><a href="http://www.nextree.co.kr/p3241/">http://www.nextree.co.kr/p3241/</a></li>
+</ul>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agileup" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

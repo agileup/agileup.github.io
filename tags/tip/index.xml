@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tip on agileup</title>
+    <link>https://agileup.github.io/tags/tip/</link>
+    <description>Recent content in Tip on agileup</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 08 Aug 2014 18:58:40 +0900</lastBuildDate>
+    
+	<atom:link href="https://agileup.github.io/tags/tip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git snippet</title>
+      <link>https://agileup.github.io/posts/2014-08-08-git-tips/</link>
+      <pubDate>Fri, 08 Aug 2014 18:58:40 +0900</pubDate>
+      
+      <guid>https://agileup.github.io/posts/2014-08-08-git-tips/</guid>
+      <description>개별파일 원복 git checkout -- &amp;lt;파일&amp;gt; : 워킹트리의 수정된 파일을 index에 있는 것으로 원복
+git checkout HEAD -- &amp;lt;파일명&amp;gt; : 워킹트리의 수정된 파일을 HEAD에 있는 것으로 원복(이 경우 &amp;ndash;는 생략가능)
+git checkout FETCH_HEAD -- &amp;lt;파일명&amp;gt; : 워킹트리의 수정된 파일의 내용을 FETCH_HEAD에 있는 것으로 원복? merge?(이 경우 &amp;ndash;는 생략가능)
+index 추가 취소 git reset -- &amp;lt;파일명&amp;gt; : 해당 파일을 index에 추가한 것을 취소(unstage). 워킹트리의 변경내용은 보존됨. (&amp;ndash;mixed 가 default)
+git reset HEAD &amp;lt;파일명&amp;gt; : 위와 동일</description>
+    </item>
+    
+  </channel>
+</rss>

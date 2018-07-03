@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="agileup">
+    <meta name="description" content="MK Style">
+    <meta name="keywords" content="blog,developer,personal,note">
+
+    <base href="https://agileup.github.io">
+    <title>
+  [PUSH NOTIFICATION] Tips for APNS &amp; GCM · agileup
+</title>
+
+    <link rel="canonical" href="https://agileup.github.io/posts/2015-01-03-push-notification-tips-for-apns-gcm/">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Nanum+Gothic:400,700|Nanum+Myeongjo:400,700&amp;subset=korean">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://agileup.github.io/css/style.min.css">
+
+    
+
+    
+      <link rel="stylesheet" href="https://agileup.github.io/css/custom.css">
+    
+      <link rel="stylesheet" href="https://agileup.github.io/css/syntax.css">
+    
+
+    <link rel="icon" type="image/png" href="https://agileup.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://agileup.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.42.2" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://agileup.github.io">
+      agileup
+    </a>
+    
+    <ul class="navigation-list  float-right ">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://agileup.github.io/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://agileup.github.io/about/">About</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">[PUSH NOTIFICATION] Tips for APNS &amp; GCM</h1>
+      <h2 class="date">January 3, 2015</h2>
+
+      
+    </header>
+
+    
+
+<h2 id="message-size">MESSAGE SIZE</h2>
+
+<ul>
+<li>APN이 허용하는 최대 PAYLOAD 크기는 256 BYTES(<a href="http://goo.gl/vYsOJq">http://goo.gl/vYsOJq</a>) 라서 DEVICE TOKEN 과, 부가 정보 등 JSON의 KEY 값을 제외하면 실제 메시지 길이는 그렇게 여유 있지 않음.</li>
+<li>서버에서 꼭 필요한 데이터를 제외한 잔여 크기 만큼 계산해 보여줄 메시지(ALERT)를 잘라내야 함.</li>
+<li>GCM은 4096 BYTES 까지 허용하기 때문에 푸시로 보낼 데이터의 내용을 감안 했을때 거의 제한이 없다고 봐도 됨.</li>
+</ul>
+
+<h2 id="error-handling">ERROR HANDLING</h2>
+
+<h4 id="apn">APN</h4>
+
+<ul>
+<li>TRANSMISSION ERROR를 전송 결과로 받을 수 있음. ERROR CODE와 함께 푸시 보낸 정보도 함께 들어오는데 여기서 코드가 8번이 &ldquo;INVALID TOKEN&rdquo;에 해당하니 해당 토큰은 저장소에서 삭제해도 무방.</li>
+<li>또한 FEEDBACK(<a href="http://goo.gl/WORVjY">http://goo.gl/WORVjY</a>) 서비스를 지원하여 앱이 지워졌거나 기타 이유로 푸시가 기기에 도달되지 못했을 경우 APN 서버가 이를 기억해서 피드백을 등록한 써드파티 서버로 알려줌. 근데 여기서 중요한 점이 실제로 유효한 피드백을 받으려면 해당 기기에 APN 서버와 통신하는 앱이 하나라도 있어야 함. 보통 일반적인 환경에선 걱정할 필요가 없지만 개발 중인 테스트 앱 환경에서는 SANDBOX 서버를 사용하기 때문에 단일 앱으로는 푸시 피드백을 테스트할 수 없음.</li>
+</ul>
+
+<blockquote>
+<p><a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/sending_notification_requests_to_apns">Sending Notification Requests to APNs</a></p>
+</blockquote>
+
+<h4 id="gcm">GCM</h4>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agileup" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

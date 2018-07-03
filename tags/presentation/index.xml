@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentation on agileup</title>
+    <link>https://agileup.github.io/tags/presentation/</link>
+    <description>Recent content in Presentation on agileup</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Jun 2014 18:20:15 +0900</lastBuildDate>
+    
+	<atom:link href="https://agileup.github.io/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTML5 Presentation Tools</title>
+      <link>https://agileup.github.io/posts/2014-06-02-html5-presentation-tools/</link>
+      <pubDate>Mon, 02 Jun 2014 18:20:15 +0900</pubDate>
+      
+      <guid>https://agileup.github.io/posts/2014-06-02-html5-presentation-tools/</guid>
+      <description>HTML5 프리젠테이션 도구를 아시나요?
+외부 강연을 하다보면 발표 자료를 자주 만드는데, 대부분 MS PowerPoint나 Apple Keynote 같은 것을 사용하게 됩니다.
+그리고 나서 Slideshare나 Slidedeck 같은데 올리고 공유하게 되지요. 하지만 HTML 마크업만 조금 배우고, 손 코딩에 익숙한 분들에게는 &amp;lsquo;웹 기반 프리젠테이션 도구&amp;rsquo;를 추천합니다.
+전용 프로그램 만큼 강력한 기능을 제공해 주고, 무엇 보다 웹 브라우저만 있으면, 어디서나 쉽게 PT가 가능하고 웹 콘텐츠를 풍성하게 할 수 있으니까요.
+(아래 데모들은 모바일 보다는 PC 웹 브라우저 특히, 파이어폭스나 크롬에서 잘 보입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="agileup">
+    <meta name="description" content="MK Style">
+    <meta name="keywords" content="blog,developer,personal,note">
+
+    <base href="https://agileup.github.io">
+    <title>
+  [Book] CleanCode · agileup
+</title>
+
+    <link rel="canonical" href="https://agileup.github.io/posts/2014-10-22-book-cleancode/">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Nanum+Gothic:400,700|Nanum+Myeongjo:400,700&amp;subset=korean">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://agileup.github.io/css/style.min.css">
+
+    
+
+    
+      <link rel="stylesheet" href="https://agileup.github.io/css/custom.css">
+    
+      <link rel="stylesheet" href="https://agileup.github.io/css/syntax.css">
+    
+
+    <link rel="icon" type="image/png" href="https://agileup.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://agileup.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.42.2" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://agileup.github.io">
+      agileup
+    </a>
+    
+    <ul class="navigation-list  float-right ">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://agileup.github.io/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://agileup.github.io/about/">About</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">[Book] CleanCode</h1>
+      <h2 class="date">October 22, 2014</h2>
+
+      
+    </header>
+
+    
+
+<h3 id="chapter-03-함수">Chapter 03. 함수</h3>
+
+<ol>
+<li><p>작게 만들어라</p>
+
+<ul>
+<li>중첩구조가 생기면 고민하자</li>
+<li>들여쓰기 수준은 1,2단을 넘지 말자</li>
+</ul></li>
+
+<li><p>한 가지만 해라</p>
+
+<ul>
+<li>의미있는 네이밍으로 판별</li>
+</ul></li>
+
+<li><p>함수 당 추상화 수준은 하나로</p></li>
+
+<li><p>Switch 문</p>
+
+<ul>
+<li>AbstractFactory?</li>
+</ul></li>
+</ol>
+
+<blockquote>
+<p>함수를 만드는 첫 번째 규칙은 ‘작게!’다. 함수를 만드는 두 번때 규칙은 ‘더 작게!’다.<br />
+각 함수가 너무도 명백했다. 각 함수가 이야기 하나를 표현했다. 각 함수가 너무도 멋지게 다음 무대를 준비했다. 바로 이것이 답이다.<br />
+함수는 한 가지를 해야 한다. 그 한 가지를 잘 해야 한다. 그 한 가지만 해야 한다.<br />
+단순히 다른 표현이 아니라 의미 있는 이름으로 다른 함수를 추출할 수 있다면 그 함수는 여러 가지 작업을 하는 셈이다.<br />
+근본 개념과 세부 사항을 뒤섞기 시작하면, 깨어진 창문처럼, 사람들이 함수에 세부 사항을 점점 더 많이 추가한다.<br />
+함수로 부울값을 넘기는 관례는 정말로 끔직하다. 왜냐고? 함수가 한꺼번에 여러 가지를 처리한다고 대놓고 공표하는 셈이니까!<br />
+함수는 뭔가를 수행하거나 뭔가에 답하거나 둘 중 하나만 해야 한다. 둘 다 하면 안된다.<br />
+어쩌면 중복은 소프트웨어에서 모든 악의 근원이다.<br />
+소프트웨어를 짜는 행위는 여느 글짓기와 비슷하다. 논문이나 기사를 쓸 때는 먼저 생각을 기록한 후 읽기 좋게 다듬는다. 초안은 대개 서투르고 어수선하므로 원하는 대로 읽힐 때까지 말을 다듬고 문장을 고치고 문단을 정리한다. 처음부터 탁 짜내지 않는다. 그게 가능한 사람은 없으리라.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="chapter-04-주석">Chapter 04. 주석</h3>
+
+<blockquote>
+<p>우리는 코드로 의도를 표현하지 못해, 그러니까 실패를 만회하기 위해 주석을 사용한다.<br />
+부정확한 주석은 아예 없는 주석보다 훨씬 더 나쁘다.<br />
+진실은 한 곳에만 존재한다. 바로 코드다. 코드만이 자기가 하는 일을 진실하게 말한다. 코드만이 정확한 정보를 제공하는 유일한 출처다. 그러므로 우리는 (간혹 필요할지라도) 주석을 가능한 줄이도록 꾸준히 노력해야 한다.<br />
+주석으로 처리된 코드는 다른 사람들이 지우기를 주저한다. 이유가 있어 남겨놓았으리라고 중요하니까 지우면 안 된다고 생각한다. 그래서 질 나쁜 와인병 바닥에 앙금이 쌓이듯 쓸모없는 코드가 점차 쌓여간다.</p>
+</blockquote>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agileup" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

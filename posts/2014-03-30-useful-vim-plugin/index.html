@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="agileup">
+    <meta name="description" content="MK Style">
+    <meta name="keywords" content="blog,developer,personal,note">
+
+    <base href="https://agileup.github.io">
+    <title>
+  Useful vim plugin · agileup
+</title>
+
+    <link rel="canonical" href="https://agileup.github.io/posts/2014-03-30-useful-vim-plugin/">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Nanum+Gothic:400,700|Nanum+Myeongjo:400,700&amp;subset=korean">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://agileup.github.io/css/style.min.css">
+
+    
+
+    
+      <link rel="stylesheet" href="https://agileup.github.io/css/custom.css">
+    
+      <link rel="stylesheet" href="https://agileup.github.io/css/syntax.css">
+    
+
+    <link rel="icon" type="image/png" href="https://agileup.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://agileup.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.42.2" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://agileup.github.io">
+      agileup
+    </a>
+    
+    <ul class="navigation-list  float-right ">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://agileup.github.io/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://agileup.github.io/about/">About</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Useful vim plugin</h1>
+      <h2 class="date">March 30, 2014</h2>
+
+      
+    </header>
+
+    
+
+<blockquote>
+<p>PUG 한상헌님 소개로 알게된 각종 vim 플러그인을 실제로 설치하고 사용해보면서 정리한 문서입니다.<br />
+환경: OS X Mavericks, iTerm2, homebrew</p>
+</blockquote>
+
+<hr />
+
+<p>vim에 각종 플러그인을 설치함으로써 개발 편의성과 생산성을 높일 수 있습니다.
+물론 VisualStudio, XCode, Eclipse 등 각종 IDE를 완전히 대체하기엔 무리가 있겠지만,
+그럼에도 불구하고 여러 플러그인 설정을 통해 vim에서도 생산성을 끌어올릴 수 있습니다.</p>
+
+<p>플러그인을 설치하고 적용하는 방법은 크게 2가지가 있습니다.</p>
+
+<ol>
+<li>pathogen</li>
+<li>vundle</li>
+</ol>
+
+<h3 id="indent-guides">Indent-Guides</h3>
+
+<ul>
+<li>인덴트(스페이스, 탭) 부분을 알기 쉽게 알맞은 색으로 하이라이팅 합니다.</li>
+<li>설치 코드 <code>Bundle 'Indent-Guides’</code></li>
+<li>기본 키보드맵은 <code>\ig</code> 로 enable/disable 할 수 있습니다.</li>
+<li>옵션을 통해 보다 상세한 설정이 가능합니다:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">set</span> <span class="nv">ts</span><span class="o">=</span><span class="m">4</span> <span class="nv">sw</span><span class="o">=</span><span class="m">4</span> et
+<span class="nb">let</span> g:indent_guides_start_level <span class="o">=</span> <span class="m">2</span>
+<span class="nb">let</span> g:indent_guides_guide_size <span class="o">=</span> <span class="m">1</span>
+<span class="nb">let</span> g:indent_guides_enable_on_vim_startup <span class="o">=</span> <span class="m">0</span></code></pre></div>
+<h3 id="nerdtree">NERDTree</h3>
+
+<ul>
+<li>현재 디렉토리 및 상/하위 디렉토리와 파일들을 트리 형태로 조회하고 읽을 수 있습니다.</li>
+<li>설치 코드 <code>Bundle 'The-NERD-tree’</code></li>
+</ul>
+
+<h3 id="surround">surround</h3>
+
+<ul>
+<li>quote를 double-quotes로, <p>태그를 <span> 태그로 빠르게 수정할 수 있는 플러그인</li>
+<li>설치 코드 <code>Bundle ‘surround.vim'</code></li>
+</ul>
+
+<h3 id="matchit">matchit</h3>
+
+<ul>
+<li>괄호, 태그 등의 짝으로 편하게 이동할 수 있는 플러그인</li>
+<li>설치 코드 <code>Bundle ‘matchit.zip’</code>
+<br />
+<br /></li>
+</ul>
+
+<h3 id="powerline">powerline</h3>
+
+<ul>
+<li><a href="http://saulic.info/blog/vim-powerline-mac-osx-howto/">http://saulic.info/blog/vim-powerline-mac-osx-howto/</a></li>
+<li><a href="https://kldp.org/node/125263">https://kldp.org/node/125263</a></li>
+</ul>
+
+<h2 id="bundle-install">Bundle install</h2>
+
+<p>I don&rsquo;t use a POSIX Shell (i.e. Bash/Sh)</p>
+
+<p>For example, you use fish and errors result when running BundleInstall!</p>
+
+<p>Vim will throw an error when running BundleInstall! if the default shell is not POSIX-compliant. Even if you manually switch to sh or bash from a different shell, the errors will continue if vim is not explicitly told to use sh or bash. The best way to rectify this is to:</p>
+
+<p>Add set shell=bash to your .vimrc.<br />
+Set the SHELL environment variable to sh or bash before running BundleInstall!.</p>
+
+<p>If using the fish shell, initial Vundle installation as well as updates can be performed by creating the following function at <code>~/.config/fish/functions/updatevim.fish</code> and then running updatevim to install/update Vundle and its bundles:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">function</span> updatevim
+    <span class="nb">set</span> SHELL <span class="o">(</span>which sh<span class="o">)</span>
+    vim +BundleInstall! +BundleClean +qall
+    <span class="nb">set</span> SHELL <span class="o">(</span>which fish<span class="o">)</span>
+end</code></pre></div>
+<h3 id="아직-정리-못한-플러그인">아직 정리 못한 플러그인</h3>
+
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Bundle &lsquo;gmarik/vundle’</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Bundle &lsquo;Solarized’</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;minibufexpl.vim&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;snipMate&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;taglist.vim&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;joonty/vdebug.git&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;ZenCoding.vim&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;SQLComplete.vim&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;vcscommand.vim&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;dbext.vim&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;netrw.vim&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;neocomplcache&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;vim-json-bundle&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;Syntastic&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;ctrlp.vim&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;Lokaltog/powerline&rsquo;, {&lsquo;rtp&rsquo;: &lsquo;powerline/bindings/vim/&rsquo;}</label></li>
+</ul>
+
+<p>Plugins for PHP</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;php.vim&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;checksyntax&rsquo;</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Bundle &lsquo;shawncplus/phpcomplete.vim’</label></li>
+</ul>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agileup" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
