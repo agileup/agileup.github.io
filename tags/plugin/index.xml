@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Plugin on agileup</title>
-    <link>https://agileup.github.io/tags/plugin/</link>
+    <link>https://www.agileup.me/tags/plugin/</link>
     <description>Recent content in Plugin on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 28 May 2014 18:10:35 +0900</lastBuildDate>
     
-	<atom:link href="https://agileup.github.io/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.agileup.me/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Wordpress] Doesn&#39;t work WPTouch plugin after activate cache plugin</title>
-      <link>https://agileup.github.io/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</link>
+      <link>https://www.agileup.me/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</link>
       <pubDate>Wed, 28 May 2014 18:10:35 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</guid>
+      <guid>https://www.agileup.me/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</guid>
       <description>얼마전 관리하던 사이트가 포탈 메인 노출 등으로 갑자기 동접이 폭증해서 서버가 죽어버리는 바람에 애를 꽤나 먹었던 기억이 있다.
 그렇다고 이런 간헐적인 상황때문에 서버 스펙을 올리는건 전반적으로 오버 스펙이 되기 때문에 다른 효과적인 방법을 찾아보았다.
 엄청난 해법이 있는건 아니고, 다소 번거로운 설정과 운영 이슈 때문에 기피했던 캐싱 설정을 맘먹고 적용했다!
@@ -26,10 +26,10 @@
     
     <item>
       <title>Useful vim plugin</title>
-      <link>https://agileup.github.io/posts/2014-03-30-useful-vim-plugin/</link>
+      <link>https://www.agileup.me/posts/2014-03-30-useful-vim-plugin/</link>
       <pubDate>Sun, 30 Mar 2014 16:45:29 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-03-30-useful-vim-plugin/</guid>
+      <guid>https://www.agileup.me/posts/2014-03-30-useful-vim-plugin/</guid>
       <description>PUG 한상헌님 소개로 알게된 각종 vim 플러그인을 실제로 설치하고 사용해보면서 정리한 문서입니다.
 환경: OS X Mavericks, iTerm2, homebrew
  vim에 각종 플러그인을 설치함으로써 개발 편의성과 생산성을 높일 수 있습니다. 물론 VisualStudio, XCode, Eclipse 등 각종 IDE를 완전히 대체하기엔 무리가 있겠지만, 그럼에도 불구하고 여러 플러그인 설정을 통해 vim에서도 생산성을 끌어올릴 수 있습니다.

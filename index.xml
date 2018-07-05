@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>agileup</title>
-    <link>https://agileup.github.io/</link>
+    <link>https://www.agileup.me/</link>
     <description>Recent content on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Jul 2018 22:55:05 +0900</lastBuildDate>
     
-	<atom:link href="https://agileup.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.agileup.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://agileup.github.io/about/</link>
+      <link>https://www.agileup.me/about/</link>
       <pubDate>Sun, 01 Jul 2018 22:55:05 +0900</pubDate>
       
-      <guid>https://agileup.github.io/about/</guid>
+      <guid>https://www.agileup.me/about/</guid>
       <description>MINKI CHOI Republic of Korea
 agileup.AT.gmail.com
 SUMMARY  Strong knowledge of developing web services both server and client side Familiar with object oriented architecture and MVC model based framework Experience in agile practice including TDD, pair programming Ability to develop prototypes quickly and handle multiple tasks Passionate about learning new concepts and discussing technology  EDUCATION Bachelor of Computer Science
@@ -25,10 +25,10 @@ Korea Advanced Institute of Science and Technology, Daejeon, Korea</description>
     
     <item>
       <title>[NodeJS] deploy with Nginx and PM2</title>
-      <link>https://agileup.github.io/posts/2015-01-19-nodejs-deploy-with-nginx-and-pm2/</link>
+      <link>https://www.agileup.me/posts/2015-01-19-nodejs-deploy-with-nginx-and-pm2/</link>
       <pubDate>Mon, 19 Jan 2015 00:11:36 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2015-01-19-nodejs-deploy-with-nginx-and-pm2/</guid>
+      <guid>https://www.agileup.me/posts/2015-01-19-nodejs-deploy-with-nginx-and-pm2/</guid>
       <description>Tips
 PM2 자체 버전업(npm update -g pm2)을 한 뒤 pm2로 등록한 모든 프로세스를 재시작할 경우 정확한 상황은 아직 판단이 안되지만 간혹 기존 프로세스가 죽지 않고 계속 살아서 결과적으로 동일한 프로세스가 2개 이상 포크되어 원하지 않는 동작을 유발할 수 있다. 따라서 업데이트 후에는 반드시 pm2 updatePM2 명령으로 직접 현재 메모리에 올라가 있는 pm2를 업데이트를 해주면 해결된다.
 Reference
@@ -38,19 +38,19 @@ Reference
     
     <item>
       <title>[PUSH NOTIFICATION] Tips for APNS &amp; GCM</title>
-      <link>https://agileup.github.io/posts/2015-01-03-push-notification-tips-for-apns-gcm/</link>
+      <link>https://www.agileup.me/posts/2015-01-03-push-notification-tips-for-apns-gcm/</link>
       <pubDate>Sat, 03 Jan 2015 23:31:57 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2015-01-03-push-notification-tips-for-apns-gcm/</guid>
+      <guid>https://www.agileup.me/posts/2015-01-03-push-notification-tips-for-apns-gcm/</guid>
       <description>MESSAGE SIZE  APN이 허용하는 최대 PAYLOAD 크기는 256 BYTES(http://goo.gl/vYsOJq) 라서 DEVICE TOKEN 과, 부가 정보 등 JSON의 KEY 값을 제외하면 실제 메시지 길이는 그렇게 여유 있지 않음. 서버에서 꼭 필요한 데이터를 제외한 잔여 크기 만큼 계산해 보여줄 메시지(ALERT)를 잘라내야 함. GCM은 4096 BYTES 까지 허용하기 때문에 푸시로 보낼 데이터의 내용을 감안 했을때 거의 제한이 없다고 봐도 됨.  ERROR HANDLING APN  TRANSMISSION ERROR를 전송 결과로 받을 수 있음.</description>
     </item>
     
     <item>
       <title>[Book] CleanCode</title>
-      <link>https://agileup.github.io/posts/2014-10-22-book-cleancode/</link>
+      <link>https://www.agileup.me/posts/2014-10-22-book-cleancode/</link>
       <pubDate>Wed, 22 Oct 2014 23:25:40 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-10-22-book-cleancode/</guid>
+      <guid>https://www.agileup.me/posts/2014-10-22-book-cleancode/</guid>
       <description>Chapter 03. 함수  작게 만들어라
  중첩구조가 생기면 고민하자 들여쓰기 수준은 1,2단을 넘지 말자  한 가지만 해라
  의미있는 네이밍으로 판별  함수 당 추상화 수준은 하나로
@@ -61,10 +61,10 @@ Reference
     
     <item>
       <title>git snippet</title>
-      <link>https://agileup.github.io/posts/2014-08-08-git-tips/</link>
+      <link>https://www.agileup.me/posts/2014-08-08-git-tips/</link>
       <pubDate>Fri, 08 Aug 2014 18:58:40 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-08-08-git-tips/</guid>
+      <guid>https://www.agileup.me/posts/2014-08-08-git-tips/</guid>
       <description>개별파일 원복 git checkout -- &amp;lt;파일&amp;gt; : 워킹트리의 수정된 파일을 index에 있는 것으로 원복
 git checkout HEAD -- &amp;lt;파일명&amp;gt; : 워킹트리의 수정된 파일을 HEAD에 있는 것으로 원복(이 경우 &amp;ndash;는 생략가능)
 git checkout FETCH_HEAD -- &amp;lt;파일명&amp;gt; : 워킹트리의 수정된 파일의 내용을 FETCH_HEAD에 있는 것으로 원복? merge?(이 경우 &amp;ndash;는 생략가능)
@@ -74,10 +74,10 @@ git reset HEAD &amp;lt;파일명&amp;gt; : 위와 동일</description>
     
     <item>
       <title>[WebStorm] Initial setting and problem shooting in Mavericks</title>
-      <link>https://agileup.github.io/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</link>
+      <link>https://www.agileup.me/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</link>
       <pubDate>Thu, 19 Jun 2014 18:28:40 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</guid>
+      <guid>https://www.agileup.me/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</guid>
       <description>새로 시작하는 프로젝트 환경이 MEAN 기반에 협업 이슈도 있어서 코드 컨벤션도 맞출겸 WebStorm IDE 를 세팅했습니다.
 유료 IDE라서 일단 Trial version 으로 접해보기 위해서 공식 홈페이지에서 다운로드를 받고 실행을 했는데 어떤 에러 메세지도 없이 아무 반응이 없었습니다.
 근래에 Java 8 버전을 테스트하면서 버전 업그레이드를 한 후에 eclipse 및 aptana studio, titanium studio 등 자바 기반 모든 ide가 에러를 뿜으면서 실행이 제대로 안되서 고생했던 기억이 있기때문에 웹스톰 역시 같은 문제일것이라 가정하고 해결 방법을 찾아보았습니다.</description>
@@ -85,10 +85,10 @@ git reset HEAD &amp;lt;파일명&amp;gt; : 위와 동일</description>
     
     <item>
       <title>[AngularJS] 기초 간단 정리</title>
-      <link>https://agileup.github.io/posts/2014-06-12-angularjs-basic/</link>
+      <link>https://www.agileup.me/posts/2014-06-12-angularjs-basic/</link>
       <pubDate>Thu, 12 Jun 2014 01:22:47 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-06-12-angularjs-basic/</guid>
+      <guid>https://www.agileup.me/posts/2014-06-12-angularjs-basic/</guid>
       <description>동작 순서  브라우저가 html을 로드 (DOM을 파싱한다.) Angular.js를 로드한다 DOM Content Loaded Event를 기다린다. DOM이 모두 로드되면 ng-app 지시자를 찾는다. ng-app에서는 dependency injection 을 위해 사용되는 $injector를 생성한다. injector 지시어는 어플리케이션의 모델을 위한 컨텍스트가 되는 루트 스코프를 생성한다. 최종적으로 ng-app을 기준으로 하위DOM을 컴파일하고 rootScope와 링크시킨다.  기본 개념  Scope
  Scope는 모델 변경을 감지하고 표현하기위한 책임을 갖는다 Scope는 DOM 구조와 가깝게 하이어라키 구조를 갖는다  Model
  모델은 화면 템플릿에 합쳐지는 데이터를 가지고 있는 일반 자바스크립트 객체이다.</description>
@@ -96,10 +96,10 @@ git reset HEAD &amp;lt;파일명&amp;gt; : 위와 동일</description>
     
     <item>
       <title>HTML5 Presentation Tools</title>
-      <link>https://agileup.github.io/posts/2014-06-02-html5-presentation-tools/</link>
+      <link>https://www.agileup.me/posts/2014-06-02-html5-presentation-tools/</link>
       <pubDate>Mon, 02 Jun 2014 18:20:15 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-06-02-html5-presentation-tools/</guid>
+      <guid>https://www.agileup.me/posts/2014-06-02-html5-presentation-tools/</guid>
       <description>HTML5 프리젠테이션 도구를 아시나요?
 외부 강연을 하다보면 발표 자료를 자주 만드는데, 대부분 MS PowerPoint나 Apple Keynote 같은 것을 사용하게 됩니다.
 그리고 나서 Slideshare나 Slidedeck 같은데 올리고 공유하게 되지요. 하지만 HTML 마크업만 조금 배우고, 손 코딩에 익숙한 분들에게는 &amp;lsquo;웹 기반 프리젠테이션 도구&amp;rsquo;를 추천합니다.
@@ -109,10 +109,10 @@ git reset HEAD &amp;lt;파일명&amp;gt; : 위와 동일</description>
     
     <item>
       <title>[Wordpress] Doesn&#39;t work WPTouch plugin after activate cache plugin</title>
-      <link>https://agileup.github.io/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</link>
+      <link>https://www.agileup.me/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</link>
       <pubDate>Wed, 28 May 2014 18:10:35 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</guid>
+      <guid>https://www.agileup.me/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</guid>
       <description>얼마전 관리하던 사이트가 포탈 메인 노출 등으로 갑자기 동접이 폭증해서 서버가 죽어버리는 바람에 애를 꽤나 먹었던 기억이 있다.
 그렇다고 이런 간헐적인 상황때문에 서버 스펙을 올리는건 전반적으로 오버 스펙이 되기 때문에 다른 효과적인 방법을 찾아보았다.
 엄청난 해법이 있는건 아니고, 다소 번거로운 설정과 운영 이슈 때문에 기피했던 캐싱 설정을 맘먹고 적용했다!
@@ -122,10 +122,10 @@ git reset HEAD &amp;lt;파일명&amp;gt; : 위와 동일</description>
     
     <item>
       <title>[OpenCV] Detecting and Matching Interest Points</title>
-      <link>https://agileup.github.io/posts/2014-05-26-opencv-detecting-and-matching-interest-points/</link>
+      <link>https://www.agileup.me/posts/2014-05-26-opencv-detecting-and-matching-interest-points/</link>
       <pubDate>Mon, 26 May 2014 17:52:55 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-05-26-opencv-detecting-and-matching-interest-points/</guid>
+      <guid>https://www.agileup.me/posts/2014-05-26-opencv-detecting-and-matching-interest-points/</guid>
       <description>OpenCV 2 Computer Vision Application Programming Cookbook
 Chapter 8. Detecting and Matching Interests Points
  Summary  Detecting Harris corners Detecting FAST features Detecting the scale-invariant SURF features Describing SURF features
@@ -136,10 +136,10 @@ Chapter 8. Detecting and Matching Interests Points
     
     <item>
       <title>403 forbidden error after upgrade php 5.5</title>
-      <link>https://agileup.github.io/posts/2014-05-05-403-forbidden-error-after-upgrade-php-5-5/</link>
+      <link>https://www.agileup.me/posts/2014-05-05-403-forbidden-error-after-upgrade-php-5-5/</link>
       <pubDate>Mon, 05 May 2014 17:47:40 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-05-05-403-forbidden-error-after-upgrade-php-5-5/</guid>
+      <guid>https://www.agileup.me/posts/2014-05-05-403-forbidden-error-after-upgrade-php-5-5/</guid>
       <description>개인적으로 운영하는 서버에 PHP 버전을 판올림한 후 느닷없이 모든 페이지에서 403 Forbidden 에러가 발생했습니다.
 구글링을 해본 결과 RootDirectory 권한 문제라는 글이 많았는데, 이건 아무리봐도 해당 경우가 아닌것 같아서 다른 방법을 찾아보던 중
 업데이트 기록을 보니 기존에 2.2 버전이였던 apache 데몬이 2.4로 판올림 된걸 확인할 수 있었습니다.
@@ -150,10 +150,10 @@ Order allow,deny Allow from all 2.2 버전에서 이렇게 설정된 부분을 �
     
     <item>
       <title>dyld: Library not loaded: /usr/local/lib/libpng15.15.dylib</title>
-      <link>https://agileup.github.io/posts/2014-04-02-dyld-library-not-loaded/</link>
+      <link>https://www.agileup.me/posts/2014-04-02-dyld-library-not-loaded/</link>
       <pubDate>Wed, 02 Apr 2014 17:15:30 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-04-02-dyld-library-not-loaded/</guid>
+      <guid>https://www.agileup.me/posts/2014-04-02-dyld-library-not-loaded/</guid>
       <description>brew로 이것저것 library를 관리하다 보면 어느순간 위와 비슷한 에러 메세지를 만날 경우가 있다.
 그럴때는 당황하지 않고,
 $ brew update $ brew upgrade 그리고 현재 버전의 php 재설치
@@ -162,10 +162,10 @@ $ brew reinstall php55 끝</description>
     
     <item>
       <title>Useful vim plugin</title>
-      <link>https://agileup.github.io/posts/2014-03-30-useful-vim-plugin/</link>
+      <link>https://www.agileup.me/posts/2014-03-30-useful-vim-plugin/</link>
       <pubDate>Sun, 30 Mar 2014 16:45:29 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-03-30-useful-vim-plugin/</guid>
+      <guid>https://www.agileup.me/posts/2014-03-30-useful-vim-plugin/</guid>
       <description>PUG 한상헌님 소개로 알게된 각종 vim 플러그인을 실제로 설치하고 사용해보면서 정리한 문서입니다.
 환경: OS X Mavericks, iTerm2, homebrew
  vim에 각종 플러그인을 설치함으로써 개발 편의성과 생산성을 높일 수 있습니다. 물론 VisualStudio, XCode, Eclipse 등 각종 IDE를 완전히 대체하기엔 무리가 있겠지만, 그럼에도 불구하고 여러 플러그인 설정을 통해 vim에서도 생산성을 끌어올릴 수 있습니다.
@@ -175,10 +175,10 @@ $ brew reinstall php55 끝</description>
     
     <item>
       <title>대응</title>
-      <link>https://agileup.github.io/posts/2014-03-30-response/</link>
+      <link>https://www.agileup.me/posts/2014-03-30-response/</link>
       <pubDate>Sun, 30 Mar 2014 01:17:06 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-03-30-response/</guid>
+      <guid>https://www.agileup.me/posts/2014-03-30-response/</guid>
       <description>내가 행복하지 못한 것은 다른 사람 때문이 아니라,
 어떤 상황에 부닥쳤을 때 어떻게 대응하느냐 하는 나의 문제입니다.
 오르기 어려운 절벽을 맞닥뜨렸을 때 어리석은 사람은 거기서 좌절하고 절망합니다.
@@ -192,20 +192,20 @@ $ brew reinstall php55 끝</description>
     
     <item>
       <title>Make Own Blog</title>
-      <link>https://agileup.github.io/posts/2014-03-17-make-own-blog/</link>
+      <link>https://www.agileup.me/posts/2014-03-17-make-own-blog/</link>
       <pubDate>Mon, 17 Mar 2014 22:55:47 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-03-17-make-own-blog/</guid>
+      <guid>https://www.agileup.me/posts/2014-03-17-make-own-blog/</guid>
       <description>  이미 유명하거나 새롭게 주목받고 있는 블로그 서비스들을 소개합니다.
  Postach  http://postach.io/ 에버노트와 연동  Ghost  http://docs.ghost.org/installation/  Medium  개인적으로는 컨텐츠 생산보다 소비에 최적화된 플랫폼인듯 자체 호스팅 지원  Wordpress  설치형: wordpress.org 서비스형: wordpress.com  Harupress  http://haroopress.com/ 5분만에 설치하는 블로그 엔진 웹 서버와 데이터베이스가 필요 없는 초 간편 컨텐츠 메니징 시스템  </description>
     </item>
     
     <item>
       <title>Laravel Overview</title>
-      <link>https://agileup.github.io/posts/2014-02-27-laravel-overview/</link>
+      <link>https://www.agileup.me/posts/2014-02-27-laravel-overview/</link>
       <pubDate>Thu, 27 Feb 2014 21:44:55 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-02-27-laravel-overview/</guid>
+      <guid>https://www.agileup.me/posts/2014-02-27-laravel-overview/</guid>
       <description>  https://laravel.com/ Taylor Otwell  특징  인증, 라우팅, 세션, 캐싱 등 Composer, FrontController, MVC, IOC-DI, UnitTest  설치  Composer 사용 git clone  설정  app.php, database.php
  VirtualHost 설정 &amp;gt; 프로젝트폴더/public
  app/storage 폴더 권한 777

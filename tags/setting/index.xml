@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Setting on agileup</title>
-    <link>https://agileup.github.io/tags/setting/</link>
+    <link>https://www.agileup.me/tags/setting/</link>
     <description>Recent content in Setting on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 19 Jun 2014 18:28:40 +0900</lastBuildDate>
     
-	<atom:link href="https://agileup.github.io/tags/setting/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.agileup.me/tags/setting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[WebStorm] Initial setting and problem shooting in Mavericks</title>
-      <link>https://agileup.github.io/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</link>
+      <link>https://www.agileup.me/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</link>
       <pubDate>Thu, 19 Jun 2014 18:28:40 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</guid>
+      <guid>https://www.agileup.me/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</guid>
       <description>새로 시작하는 프로젝트 환경이 MEAN 기반에 협업 이슈도 있어서 코드 컨벤션도 맞출겸 WebStorm IDE 를 세팅했습니다.
 유료 IDE라서 일단 Trial version 으로 접해보기 위해서 공식 홈페이지에서 다운로드를 받고 실행을 했는데 어떤 에러 메세지도 없이 아무 반응이 없었습니다.
 근래에 Java 8 버전을 테스트하면서 버전 업그레이드를 한 후에 eclipse 및 aptana studio, titanium studio 등 자바 기반 모든 ide가 에러를 뿜으면서 실행이 제대로 안되서 고생했던 기억이 있기때문에 웹스톰 역시 같은 문제일것이라 가정하고 해결 방법을 찾아보았습니다.</description>

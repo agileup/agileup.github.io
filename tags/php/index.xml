@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Php on agileup</title>
-    <link>https://agileup.github.io/tags/php/</link>
+    <link>https://www.agileup.me/tags/php/</link>
     <description>Recent content in Php on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 05 May 2014 17:47:40 +0900</lastBuildDate>
     
-	<atom:link href="https://agileup.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.agileup.me/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>403 forbidden error after upgrade php 5.5</title>
-      <link>https://agileup.github.io/posts/2014-05-05-403-forbidden-error-after-upgrade-php-5-5/</link>
+      <link>https://www.agileup.me/posts/2014-05-05-403-forbidden-error-after-upgrade-php-5-5/</link>
       <pubDate>Mon, 05 May 2014 17:47:40 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-05-05-403-forbidden-error-after-upgrade-php-5-5/</guid>
+      <guid>https://www.agileup.me/posts/2014-05-05-403-forbidden-error-after-upgrade-php-5-5/</guid>
       <description>개인적으로 운영하는 서버에 PHP 버전을 판올림한 후 느닷없이 모든 페이지에서 403 Forbidden 에러가 발생했습니다.
 구글링을 해본 결과 RootDirectory 권한 문제라는 글이 많았는데, 이건 아무리봐도 해당 경우가 아닌것 같아서 다른 방법을 찾아보던 중
 업데이트 기록을 보니 기존에 2.2 버전이였던 apache 데몬이 2.4로 판올림 된걸 확인할 수 있었습니다.
@@ -27,10 +27,10 @@ Order allow,deny Allow from all 2.2 버전에서 이렇게 설정된 부분을 �
     
     <item>
       <title>Laravel Overview</title>
-      <link>https://agileup.github.io/posts/2014-02-27-laravel-overview/</link>
+      <link>https://www.agileup.me/posts/2014-02-27-laravel-overview/</link>
       <pubDate>Thu, 27 Feb 2014 21:44:55 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-02-27-laravel-overview/</guid>
+      <guid>https://www.agileup.me/posts/2014-02-27-laravel-overview/</guid>
       <description>  https://laravel.com/ Taylor Otwell  특징  인증, 라우팅, 세션, 캐싱 등 Composer, FrontController, MVC, IOC-DI, UnitTest  설치  Composer 사용 git clone  설정  app.php, database.php
  VirtualHost 설정 &amp;gt; 프로젝트폴더/public
  app/storage 폴더 권한 777

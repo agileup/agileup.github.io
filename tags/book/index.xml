@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Book on agileup</title>
-    <link>https://agileup.github.io/tags/book/</link>
+    <link>https://www.agileup.me/tags/book/</link>
     <description>Recent content in Book on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 22 Oct 2014 23:25:40 +0900</lastBuildDate>
     
-	<atom:link href="https://agileup.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.agileup.me/tags/book/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Book] CleanCode</title>
-      <link>https://agileup.github.io/posts/2014-10-22-book-cleancode/</link>
+      <link>https://www.agileup.me/posts/2014-10-22-book-cleancode/</link>
       <pubDate>Wed, 22 Oct 2014 23:25:40 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-10-22-book-cleancode/</guid>
+      <guid>https://www.agileup.me/posts/2014-10-22-book-cleancode/</guid>
       <description>Chapter 03. 함수  작게 만들어라
  중첩구조가 생기면 고민하자 들여쓰기 수준은 1,2단을 넘지 말자  한 가지만 해라
  의미있는 네이밍으로 판별  함수 당 추상화 수준은 하나로

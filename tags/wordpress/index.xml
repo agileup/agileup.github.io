@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wordpress on agileup</title>
-    <link>https://agileup.github.io/tags/wordpress/</link>
+    <link>https://www.agileup.me/tags/wordpress/</link>
     <description>Recent content in Wordpress on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 28 May 2014 18:10:35 +0900</lastBuildDate>
     
-	<atom:link href="https://agileup.github.io/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.agileup.me/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Wordpress] Doesn&#39;t work WPTouch plugin after activate cache plugin</title>
-      <link>https://agileup.github.io/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</link>
+      <link>https://www.agileup.me/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</link>
       <pubDate>Wed, 28 May 2014 18:10:35 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</guid>
+      <guid>https://www.agileup.me/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</guid>
       <description>얼마전 관리하던 사이트가 포탈 메인 노출 등으로 갑자기 동접이 폭증해서 서버가 죽어버리는 바람에 애를 꽤나 먹었던 기억이 있다.
 그렇다고 이런 간헐적인 상황때문에 서버 스펙을 올리는건 전반적으로 오버 스펙이 되기 때문에 다른 효과적인 방법을 찾아보았다.
 엄청난 해법이 있는건 아니고, 다소 번거로운 설정과 운영 이슈 때문에 기피했던 캐싱 설정을 맘먹고 적용했다!

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dev on agileup</title>
-    <link>https://agileup.github.io/categories/dev/</link>
+    <link>https://www.agileup.me/categories/dev/</link>
     <description>Recent content in Dev on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 12 Jun 2014 01:22:47 +0900</lastBuildDate>
     
-	<atom:link href="https://agileup.github.io/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.agileup.me/categories/dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[AngularJS] 기초 간단 정리</title>
-      <link>https://agileup.github.io/posts/2014-06-12-angularjs-basic/</link>
+      <link>https://www.agileup.me/posts/2014-06-12-angularjs-basic/</link>
       <pubDate>Thu, 12 Jun 2014 01:22:47 +0900</pubDate>
       
-      <guid>https://agileup.github.io/posts/2014-06-12-angularjs-basic/</guid>
+      <guid>https://www.agileup.me/posts/2014-06-12-angularjs-basic/</guid>
       <description>동작 순서  브라우저가 html을 로드 (DOM을 파싱한다.) Angular.js를 로드한다 DOM Content Loaded Event를 기다린다. DOM이 모두 로드되면 ng-app 지시자를 찾는다. ng-app에서는 dependency injection 을 위해 사용되는 $injector를 생성한다. injector 지시어는 어플리케이션의 모델을 위한 컨텍스트가 되는 루트 스코프를 생성한다. 최종적으로 ng-app을 기준으로 하위DOM을 컴파일하고 rootScope와 링크시킨다.  기본 개념  Scope
  Scope는 모델 변경을 감지하고 표현하기위한 책임을 갖는다 Scope는 DOM 구조와 가깝게 하이어라키 구조를 갖는다  Model
  모델은 화면 템플릿에 합쳐지는 데이터를 가지고 있는 일반 자바스크립트 객체이다.</description>
