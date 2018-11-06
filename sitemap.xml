@@ -28,6 +28,11 @@
   </url>
   
   <url>
+    <loc>https://www.agileup.me/posts/2014-07-10-terminal-clipboard-copy-and-paste/</loc>
+    <lastmod>2014-07-10T20:03:19+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.agileup.me/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</loc>
     <lastmod>2014-06-19T18:28:40+09:00</lastmod>
   </url>
@@ -124,6 +129,18 @@
   </url>
   
   <url>
+    <loc>https://www.agileup.me/tags/clipboard/</loc>
+    <lastmod>2014-07-10T20:03:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/copyandpaste/</loc>
+    <lastmod>2014-07-10T20:03:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.agileup.me/categories/dev/</loc>
     <lastmod>2014-06-12T01:22:47+09:00</lastmod>
     <priority>0</priority>
@@ -150,6 +167,12 @@
   <url>
     <loc>https://www.agileup.me/tags/laravel/</loc>
     <lastmod>2014-02-27T21:44:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/linux/</loc>
+    <lastmod>2014-07-10T20:03:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -184,8 +207,26 @@
   </url>
   
   <url>
+    <loc>https://www.agileup.me/tags/osx/</loc>
+    <lastmod>2014-07-10T20:03:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.agileup.me/tags/overview/</loc>
     <lastmod>2014-02-27T21:44:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/pbcopy/</loc>
+    <lastmod>2014-07-10T20:03:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/pbpaste/</loc>
+    <lastmod>2014-07-10T20:03:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
