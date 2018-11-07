@@ -73,16 +73,15 @@ git reset HEAD &amp;lt;파일명&amp;gt; : 위와 동일</description>
     </item>
     
     <item>
-      <title>터미널에서 클립보드 복사 &amp; 붙여넣기</title>
+      <title>OSX/Linux 터미널에서 클립보드 복사 &amp; 붙여넣기</title>
       <link>https://www.agileup.me/posts/2014-07-10-terminal-clipboard-copy-and-paste/</link>
       <pubDate>Thu, 10 Jul 2014 20:03:19 +0900</pubDate>
       
       <guid>https://www.agileup.me/posts/2014-07-10-terminal-clipboard-copy-and-paste/</guid>
-      <description>클립보드 복사는 pbcopy, 붙여넣기는 pbpaste. 이 둘을 리눅스 기본 파이프라인과 잘 조합해서 사용.
-리눅스나 OSX 모두 터미널에서 동일하게 사용 가능.
-// 복사 $ cat ~/foo.csv | pbcopy // 붙여넣기 $ pbpaste &amp;gt; ~/bar.csv Reference
- https://apple.stackexchange.com/a/15322
- </description>
+      <description>OSX 클립보드 복사는 pbcopy, 붙여넣기는 pbpaste
+이 둘을 터미널 기본 파이프라인과 잘 조합해서 사용
+// 복사 $ cat ~/foo.csv | pbcopy // 붙여넣기 $ pbpaste &amp;gt; ~/bar.csv Linux(Ubuntu, Debian) 기본 패키지 저장소에 포함된 xclip 또는 xsel을 설치 후 사용
+// 1. 설치 $ sudo apt install xclip xsel // 2. alias 설정 $ vi ~/.bashrc alias pbcopy=&amp;#39;xclip -selection clipboard&amp;#39; alias pbpaste=&amp;#39;xclip -selection clipboard -o&amp;#39; 또는 alias pbcopy=&amp;#39;xsel --clipboard --input&amp;#39; alias pbpaste=&amp;#39;xsel --clipboard --output&amp;#39; // 3.</description>
     </item>
     
     <item>
