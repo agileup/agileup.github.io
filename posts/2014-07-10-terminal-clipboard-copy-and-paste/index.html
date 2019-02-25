@@ -9,7 +9,6 @@
     <meta name="description" content="MK Style">
     <meta name="keywords" content="blog,developer,personal,note">
 
-    <base href="https://www.agileup.me">
     <script type="application/ld+json">
     {
         "@context" : "http://schema.org",
@@ -40,6 +39,15 @@
     }
 </script>
 
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="OSX/Linux 터미널에서 클립보드 복사 &amp; 붙여넣기"/>
+<meta name="twitter:description" content="OSX 클립보드 복사는 pbcopy, 붙여넣기는 pbpaste
+이 둘을 터미널 기본 파이프라인과 잘 조합해서 사용
+// 복사 $ cat ~/foo.csv | pbcopy // 붙여넣기 $ pbpaste &gt; ~/bar.csv Linux(Ubuntu, Debian) 기본 패키지 저장소에 포함된 xclip 또는 xsel을 설치 후 사용
+// 1. 설치 $ sudo apt install xclip xsel // 2. alias 설정 $ vi ~/.bashrc alias pbcopy=&#39;xclip -selection clipboard&#39; alias pbpaste=&#39;xclip -selection clipboard -o&#39; 또는 alias pbcopy=&#39;xsel --clipboard --input&#39; alias pbpaste=&#39;xsel --clipboard --output&#39; // 3."/>
+
+
+    <base href="https://www.agileup.me/posts/2014-07-10-terminal-clipboard-copy-and-paste/">
     <title>
   OSX/Linux 터미널에서 클립보드 복사 &amp; 붙여넣기 · agileup
 </title>
@@ -48,9 +56,16 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Nanum+Gothic:400,700|Nanum+Myeongjo:400,700&amp;subset=korean">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
-    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.agileup.me/css/style.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://www.agileup.me/css/coder.min.8881182b3ec36ffd9c735306f7e16ce9b1129ebc650e069e7c4114827e9d9b23.css" integrity="sha256-iIEYKz7Db/2cc1MG9&#43;Fs6bESnrxlDgaefEEUgn6dmyM=" crossorigin="anonymous" media="screen" />
+    
+
+    
 
     
 
@@ -61,32 +76,37 @@
     
 
     <link rel="icon" type="image/png" href="https://www.agileup.me/images/favicon.ico">
+    
+    
 
     
 
-    <meta name="generator" content="Hugo 0.49.2" />
+    <meta name="generator" content="Hugo 0.54.0" />
   </head>
 
-  <body class="">
+  <body class=" ">
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://www.agileup.me">
       agileup
     </a>
-    
-    <ul class="navigation-list  float-right ">
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
       
-      <li class="navigation-item">
-        <a class="navigation-link" href="https://www.agileup.me/posts/">Blog</a>
-      </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.agileup.me/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.agileup.me/about/">About</a>
+          </li>
+        
       
-      <li class="navigation-item">
-        <a class="navigation-link" href="https://www.agileup.me/about/">About</a>
-      </li>
       
     </ul>
-    
   </section>
 </nav>
 
@@ -94,15 +114,44 @@
       <div class="content">
         
   <section class="container post">
-  <article>
-    <header>
-      <h1 class="title">OSX/Linux 터미널에서 클립보드 복사 &amp; 붙여넣기</h1>
-      <h2 class="date">July 10, 2014</h2>
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">OSX/Linux 터미널에서 클립보드 복사 &amp; 붙여넣기</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2014-07-10T20:03:19&#43;09:00'>
+                July 10, 2014
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              One minute read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://www.agileup.me/tags/osx/">osx</a>
+      <span class="separator">•</span>
+    <a href="https://www.agileup.me/tags/linux/">linux</a>
+      <span class="separator">•</span>
+    <a href="https://www.agileup.me/tags/clipboard/">clipboard</a>
+      <span class="separator">•</span>
+    <a href="https://www.agileup.me/tags/copyandpaste/">copyandpaste</a>
+      <span class="separator">•</span>
+    <a href="https://www.agileup.me/tags/pbcopy/">pbcopy</a>
+      <span class="separator">•</span>
+    <a href="https://www.agileup.me/tags/pbpaste/">pbpaste</a></div>
 
-      
-    </header>
+        </div>
+      </header>
 
-    
+      <div>
+        
 
 <h2 id="osx">OSX</h2>
 
@@ -142,12 +191,14 @@ $ <span class="nb">source</span> ~/.bashrc</code></pre></div>
 <a href="https://www.ostechnix.com/how-to-use-pbcopy-and-pbpaste-commands-on-linux/">https://www.ostechnix.com/how-to-use-pbcopy-and-pbpaste-commands-on-linux/</a></p>
 </blockquote>
 
-  </article>
+      </div>
 
-  <br/>
+      <div class="cc-box">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">크리에이티브 커먼즈 저작자표시-비영리 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.
+      </div>
 
-  
-      <div id="disqus_thread"></div>
+      <footer>
+        <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -167,9 +218,11 @@ $ <span class="nb">source</span> ~/.bashrc</code></pre></div>
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  
-  
-</section>
+      </footer>
+    </article>
+
+    
+  </section>
 
       </div>
 
