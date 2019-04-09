@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.agileup.me/notes/2019-03-30-response/</loc>
+    <lastmod>2019-03-30T01:17:06+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.agileup.me/about/</loc>
     <lastmod>2018-07-01T22:55:05+09:00</lastmod>
   </url>
@@ -70,11 +75,6 @@
   <url>
     <loc>https://www.agileup.me/posts/2014-03-30-useful-vim-plugin/</loc>
     <lastmod>2014-03-30T16:45:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-03-30-response/</loc>
-    <lastmod>2014-03-30T01:17:06+09:00</lastmod>
   </url>
   
   <url>
@@ -195,6 +195,12 @@
   </url>
   
   <url>
+    <loc>https://www.agileup.me/notes/</loc>
+    <lastmod>2019-03-30T01:17:06+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.agileup.me/tags/notification/</loc>
     <lastmod>2015-01-03T23:31:57+09:00</lastmod>
     <priority>0</priority>
@@ -304,7 +310,7 @@
   
   <url>
     <loc>https://www.agileup.me/</loc>
-    <lastmod>2018-07-01T22:55:05+09:00</lastmod>
+    <lastmod>2019-03-30T01:17:06+09:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on agileup</title>
+    <link>https://www.agileup.me/notes/</link>
+    <description>Recent content in Notes on agileup</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Mar 2019 01:17:06 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.agileup.me/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>대응</title>
+      <link>https://www.agileup.me/notes/2019-03-30-response/</link>
+      <pubDate>Sat, 30 Mar 2019 01:17:06 +0900</pubDate>
+      
+      <guid>https://www.agileup.me/notes/2019-03-30-response/</guid>
+      <description>며칠 전 모처럼 언제 만나도 즐거운 지인과 함께 식사와 커피 한잔하면서 여러 이야기를 주고받았다.
+업무 간 커뮤니케이션에 관해 이야기를 시작했지만, 궁극적으로 일상 모든 대화에서 효과적으로 타협할 수 있는 전략에 관한 이야기처럼 기억이 되는 걸 보니 꽤나 마음에 새기고 기억하면 좋겠다 싶다.
+대화에 앞서 혼자 마음속으로 먼저 준비한다.
+&amp;lsquo;상대방이 이야기하는게 설령 당장 잘 이해가 되지 않는다고 하더라도, 분명 맞는 말을 하고 있을 것이다. 맥락이 살짝 빗겨나 있거나 명확한 논리가 부족해 보일지라도 분명 말이 되는 이야기를 하고 있을 것이다.</description>
+    </item>
+    
+  </channel>
+</rss>
