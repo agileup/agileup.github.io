@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Clean Code on agileup</title>
+    <title>clean code on agileup</title>
     <link>https://www.agileup.me/tags/clean-code/</link>
-    <description>Recent content in Clean Code on agileup</description>
+    <description>Recent content in clean code on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 22 Oct 2014 23:25:40 +0900</lastBuildDate>

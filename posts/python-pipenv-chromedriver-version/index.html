@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="agileup">
+    <meta name="description" content="MK Style">
+    <meta name="keywords" content="blog,developer,personal,note">
+
+    <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "https:\/\/www.agileup.me"
+        },
+        "articleSection" : "posts",
+        "name" : "python selenium 개발 chromedriver 버전 문제 해결",
+        "headline" : "python selenium 개발 chromedriver 버전 문제 해결",
+        "description" : "python 프로젝트에서 selenium으로 특정 사이트 크롤링 작업이 필요했는데 pipenv로 환경설정을 마친 후에 바로 예상치못한 에러를 만났다.\nselenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 75 에러메시지를 보면 설치된 크롬드라이버 버전과 내 os에 설치된 크롬 버전이 맞지 않는다는 내용인데,\n앞선 프로젝트에서 필요해 brew로 설치했던 chromedriver가 일괄 업데이트 되면서 버전업이 된게 문제의 원인인듯 했다.\n현재 OS에 설치된 크롬 버전은 주소창에 chrome:\/\/version에서 확인해보면 74버전이고 해당 버전에 맞는 크롬드라이버는 74.",
+        "inLanguage" : "en-US",
+        "author" : "agileup",
+        "creator" : "agileup",
+        "publisher": "agileup",
+        "accountablePerson" : "agileup",
+        "copyrightHolder" : "agileup",
+        "copyrightYear" : "2019",
+        "datePublished": "2019-06-15 16:20:51 \x2b0700 \x2b07",
+        "dateModified" : "2019-06-15 16:20:51 \x2b0700 \x2b07",
+        "url" : "https:\/\/www.agileup.me\/posts\/python-pipenv-chromedriver-version\/",
+        "wordCount" : "296",
+        "keywords" : [ "python","pipenv","selenium","chromedriver","homebrew","Blog" ]
+    }
+</script>
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="python selenium 개발 chromedriver 버전 문제 해결"/>
+<meta name="twitter:description" content="python 프로젝트에서 selenium으로 특정 사이트 크롤링 작업이 필요했는데 pipenv로 환경설정을 마친 후에 바로 예상치못한 에러를 만났다.
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 75 에러메시지를 보면 설치된 크롬드라이버 버전과 내 os에 설치된 크롬 버전이 맞지 않는다는 내용인데,
+앞선 프로젝트에서 필요해 brew로 설치했던 chromedriver가 일괄 업데이트 되면서 버전업이 된게 문제의 원인인듯 했다.
+현재 OS에 설치된 크롬 버전은 주소창에 chrome://version에서 확인해보면 74버전이고 해당 버전에 맞는 크롬드라이버는 74."/>
+
+
+    <base href="https://www.agileup.me/posts/python-pipenv-chromedriver-version/">
+    <title>
+  python selenium 개발 chromedriver 버전 문제 해결 · agileup
+</title>
+
+    <link rel="canonical" href="https://www.agileup.me/posts/python-pipenv-chromedriver-version/">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Nanum+Gothic:400,700|Nanum+Myeongjo:400,700&amp;subset=korean">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://www.agileup.me/css/coder.min.8881182b3ec36ffd9c735306f7e16ce9b1129ebc650e069e7c4114827e9d9b23.css" integrity="sha256-iIEYKz7Db/2cc1MG9&#43;Fs6bESnrxlDgaefEEUgn6dmyM=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://www.agileup.me/css/custom.css">
+    
+      <link rel="stylesheet" href="https://www.agileup.me/css/syntax.css">
+    
+
+    <link rel="icon" type="image/png" href="https://www.agileup.me/images/favicon.ico">
+    
+    
+
+    
+
+    <meta name="generator" content="Hugo 0.55.6" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.agileup.me">
+      agileup
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.agileup.me/posts/">Tech</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.agileup.me/notes/">Note</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://www.agileup.me/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">python selenium 개발 chromedriver 버전 문제 해결</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2019-06-15T16:20:51&#43;07:00'>
+                June 15, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://www.agileup.me/tags/python/">python</a>
+      <span class="separator">•</span>
+    <a href="https://www.agileup.me/tags/pipenv/">pipenv</a>
+      <span class="separator">•</span>
+    <a href="https://www.agileup.me/tags/selenium/">selenium</a>
+      <span class="separator">•</span>
+    <a href="https://www.agileup.me/tags/chromedriver/">chromedriver</a>
+      <span class="separator">•</span>
+    <a href="https://www.agileup.me/tags/homebrew/">homebrew</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>python 프로젝트에서 selenium으로 특정 사이트 크롤링 작업이 필요했는데 pipenv로 환경설정을 마친 후에 바로 예상치못한 에러를 만났다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version <span class="m">75</span></code></pre></div>
+<p>에러메시지를 보면 설치된 크롬드라이버 버전과 내 os에 설치된 크롬 버전이 맞지 않는다는 내용인데,<br />
+앞선 프로젝트에서 필요해 brew로 설치했던 chromedriver가 일괄 업데이트 되면서 버전업이 된게 문제의 원인인듯 했다.</p>
+
+<p>현재 OS에 설치된 크롬 버전은 주소창에 <code>chrome://version</code>에서 확인해보면 <code>74</code>버전이고 해당 버전에 맞는 <a href="http://chromedriver.chromium.org/downloads">크롬드라이버</a>는 <code>74.0.3729.6</code> 버전이다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ brew cask install chromedriver</code></pre></div>
+<p>위 명령어를 통해서 그냥 간편하게 설치할 경우 자동으로 최신 버전(<code>75.0.3770.90</code>)의 크롬드라이버가 설치된다.
+설치된 크롬드라이버 정보는 아래 명령어를 통해 확인할 수 있다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ brew cask info chromedriver</code></pre></div>
+<p>해결을 위해선</p>
+
+<ol>
+<li>크롬 버전 업그레이드: 74 → 75</li>
+<li>크롬드라이버 버전 다운그레이드: 75 → 74</li>
+</ol>
+
+<p>두가지 중 편한 방법을 선택하면 된다.</p>
+
+<p>나는 두번째 방법으로 해결했는데, 해결 방법은 다음과 같다.<br />
+<code>homebrew cask</code>를 이용해 설치한 모든 패키지의 다운그레이드는 동일한 방법으로 가능하다.</p>
+
+<ol>
+<li>기존 설치된 패키지 제거</li>
+<li><a href="https://github.com/Homebrew/homebrew-cask">Homebrew Cask GitHub 저장소</a>에서 <code>Casks</code> 폴더 내 설치 필요한 패키지 검색</li>
+<li>필요 패키지 이름의 <code>*.rb</code> 파일 선택 후 해당 파일의 History 조회</li>
+<li>커밋 로그에 알맞은 버전 확인 후 해당 커밋 시점에 raw file link 복사</li>
+<li>특정 버전의 패키지 설치</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># 기존 버전 삭제</span>
+$ brew cask uninstall <span class="nv">chromedriver</span>
+<span class="o">==</span>&gt; Uninstalling Cask <span class="nv">chromedriver</span>
+<span class="o">==</span>&gt; Unlinking Binary <span class="s1">&#39;/usr/local/bin/chromedriver&#39;</span>.
+<span class="o">==</span>&gt; Purging files <span class="k">for</span> version <span class="m">75</span>.0.3770.8 of Cask chromedriver
+
+<span class="c1"># 특정 버전 설치</span>
+$ brew cask install https://raw.githubusercontent.com/Homebrew/homebrew-cask/0d1e0888e1cc3365e96249d4f606eb293725f6b4/Casks/chromedriver.rb
+<span class="o">==</span>&gt; Downloading https://raw.githubusercontent.com/Homebrew/homebrew-cask/0d1e0888e1cc3365e96249d4f606eb293725f6b4/Casks/chromedriver.rb.
+<span class="c1">######################################################################## 100.0%</span>
+<span class="o">==</span>&gt; Satisfying <span class="nv">dependencies</span>
+<span class="o">==</span>&gt; Downloading https://chromedriver.storage.googleapis.com/74.0.3729.6/chromedriver_mac64.zip
+<span class="c1">######################################################################## 100.0%</span>
+<span class="o">==</span>&gt; Verifying SHA-256 checksum <span class="k">for</span> Cask <span class="s1">&#39;chromedriver&#39;</span>.
+<span class="o">==</span>&gt; Installing Cask <span class="nv">chromedriver</span>
+<span class="o">==</span>&gt; Linking Binary <span class="s1">&#39;chromedriver&#39;</span> to <span class="s1">&#39;/usr/local/bin/chromedriver&#39;</span>.
+🍺  chromedriver was successfully installed!
+
+<span class="c1"># 설치 버전 확인</span>
+$ brew cask info chromedriver
+chromedriver: <span class="m">75</span>.0.3770.90
+https://sites.google.com/a/chromium.org/chromedriver/home
+/usr/local/Caskroom/chromedriver/74.0.3729.6 <span class="o">(</span><span class="m">14</span>.1MB<span class="o">)</span>
+From: https://github.com/Homebrew/homebrew-cask/blob/master/Casks/chromedriver.rb
+<span class="o">==</span>&gt; Name
+<span class="nv">ChromeDriver</span>
+<span class="o">==</span>&gt; Artifacts
+chromedriver <span class="o">(</span>Binary<span class="o">)</span></code></pre></div>
+<p>드라이버 버전을 낮추고 다시 python 프로젝트를 실행해보면 정상적으로 에러 없이 동작하는걸 확인할 수 있다.</p>
+
+<blockquote>
+<p>reference<br />
+- <a href="http://chromedriver.chromium.org/downloads">http://chromedriver.chromium.org/downloads</a><br />
+- <a href="https://github.com/Homebrew/homebrew-cask">https://github.com/Homebrew/homebrew-cask</a></p>
+</blockquote>
+
+      </div>
+
+      <div class="cc-box">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">크리에이티브 커먼즈 저작자표시-비영리 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "agileup" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-121802000-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+
+</html>

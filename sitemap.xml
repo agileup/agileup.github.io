@@ -3,6 +3,65 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.agileup.me/posts/</loc>
+    <lastmod>2019-06-15T16:20:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/</loc>
+    <lastmod>2019-06-15T16:20:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/</loc>
+    <lastmod>2019-06-15T16:20:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/chromedriver/</loc>
+    <lastmod>2019-06-15T16:20:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/homebrew/</loc>
+    <lastmod>2019-06-15T16:20:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/pipenv/</loc>
+    <lastmod>2019-06-15T16:20:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/python/</loc>
+    <lastmod>2019-06-15T16:20:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/posts/python-pipenv-chromedriver-version/</loc>
+    <lastmod>2019-06-15T16:20:51+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/selenium/</loc>
+    <lastmod>2019-06-15T16:20:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/notes/</loc>
+    <lastmod>2019-03-30T01:17:06+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.agileup.me/notes/2019-03-30-response/</loc>
     <lastmod>2019-03-30T01:17:06+09:00</lastmod>
   </url>
@@ -18,79 +77,26 @@
   </url>
   
   <url>
+    <loc>https://www.agileup.me/tags/nginx/</loc>
+    <lastmod>2015-01-19T00:11:36+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/nodejs/</loc>
+    <lastmod>2015-01-19T00:11:36+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/pm2/</loc>
+    <lastmod>2015-01-19T00:11:36+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.agileup.me/posts/2015-01-03-push-notification-tips-for-apns-gcm/</loc>
     <lastmod>2015-01-03T23:31:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-10-22-book-cleancode/</loc>
-    <lastmod>2014-10-22T23:25:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-08-08-git-tips/</loc>
-    <lastmod>2014-08-08T18:58:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-07-10-terminal-clipboard-copy-and-paste/</loc>
-    <lastmod>2014-07-10T20:03:19+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</loc>
-    <lastmod>2014-06-19T18:28:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-06-12-angularjs-basic/</loc>
-    <lastmod>2014-06-12T01:22:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-06-02-html5-presentation-tools/</loc>
-    <lastmod>2014-06-02T18:20:15+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</loc>
-    <lastmod>2014-05-28T18:10:35+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-05-26-opencv-detecting-and-matching-interest-points/</loc>
-    <lastmod>2014-05-26T17:52:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-05-05-403-forbidden-error-after-upgrade-php-5-5/</loc>
-    <lastmod>2014-05-05T17:47:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-04-02-dyld-library-not-loaded/</loc>
-    <lastmod>2014-04-02T17:15:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-03-30-useful-vim-plugin/</loc>
-    <lastmod>2014-03-30T16:45:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-03-17-make-own-blog/</loc>
-    <lastmod>2014-03-17T22:55:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/2014-02-27-laravel-overview/</loc>
-    <lastmod>2014-02-27T21:44:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/angularjs/</loc>
-    <lastmod>2014-06-12T01:22:47+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -100,25 +106,31 @@
   </url>
   
   <url>
+    <loc>https://www.agileup.me/tags/gcm/</loc>
+    <lastmod>2015-01-03T23:31:57+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/notification/</loc>
+    <lastmod>2015-01-03T23:31:57+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/push/</loc>
+    <lastmod>2015-01-03T23:31:57+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/posts/2014-10-22-book-cleancode/</loc>
+    <lastmod>2014-10-22T23:25:40+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.agileup.me/tags/book/</loc>
     <lastmod>2014-10-22T23:25:40+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/brew/</loc>
-    <lastmod>2014-04-02T17:15:30+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/cache/</loc>
-    <lastmod>2014-05-28T18:10:35+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/categories/</loc>
     <priority>0</priority>
   </url>
   
@@ -126,6 +138,28 @@
     <loc>https://www.agileup.me/tags/clean-code/</loc>
     <lastmod>2014-10-22T23:25:40+09:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/git/</loc>
+    <lastmod>2014-08-08T18:58:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/posts/2014-08-08-git-tips/</loc>
+    <lastmod>2014-08-08T18:58:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/tip/</loc>
+    <lastmod>2014-08-08T18:58:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/posts/2014-07-10-terminal-clipboard-copy-and-paste/</loc>
+    <lastmod>2014-07-10T20:03:19+09:00</lastmod>
   </url>
   
   <url>
@@ -141,86 +175,14 @@
   </url>
   
   <url>
-    <loc>https://www.agileup.me/categories/dev/</loc>
-    <lastmod>2014-06-12T01:22:47+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/gcm/</loc>
-    <lastmod>2015-01-03T23:31:57+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/git/</loc>
-    <lastmod>2014-08-08T18:58:40+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/html5/</loc>
-    <lastmod>2014-06-02T18:20:15+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/laravel/</loc>
-    <lastmod>2014-02-27T21:44:55+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.agileup.me/tags/linux/</loc>
     <lastmod>2014-07-10T20:03:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.agileup.me/tags/mavericks/</loc>
-    <lastmod>2014-06-19T18:28:40+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/nginx/</loc>
-    <lastmod>2015-01-19T00:11:36+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/nodejs/</loc>
-    <lastmod>2015-01-19T00:11:36+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/notes/</loc>
-    <lastmod>2019-03-30T01:17:06+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/notification/</loc>
-    <lastmod>2015-01-03T23:31:57+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/opencv/</loc>
-    <lastmod>2014-05-26T17:52:55+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.agileup.me/tags/osx/</loc>
     <lastmod>2014-07-10T20:03:19+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/overview/</loc>
-    <lastmod>2014-02-27T21:44:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -237,38 +199,13 @@
   </url>
   
   <url>
-    <loc>https://www.agileup.me/tags/php/</loc>
-    <lastmod>2014-05-05T17:47:40+09:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.agileup.me/posts/2014-06-19-webstorm-initial-setting-and-problem-shooting-in-mavericks/</loc>
+    <lastmod>2014-06-19T18:28:40+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.agileup.me/tags/plugin/</loc>
-    <lastmod>2014-05-28T18:10:35+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/pm2/</loc>
-    <lastmod>2015-01-19T00:11:36+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/posts/</loc>
-    <lastmod>2015-01-19T00:11:36+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/presentation/</loc>
-    <lastmod>2014-06-02T18:20:15+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.agileup.me/tags/push/</loc>
-    <lastmod>2015-01-03T23:31:57+09:00</lastmod>
+    <loc>https://www.agileup.me/tags/mavericks/</loc>
+    <lastmod>2014-06-19T18:28:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -279,26 +216,65 @@
   </url>
   
   <url>
-    <loc>https://www.agileup.me/tags/</loc>
+    <loc>https://www.agileup.me/tags/webstorm/</loc>
+    <lastmod>2014-06-19T18:28:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/categories/</loc>
     <lastmod>2014-06-12T01:22:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.agileup.me/tags/tip/</loc>
-    <lastmod>2014-08-08T18:58:40+09:00</lastmod>
+    <loc>https://www.agileup.me/posts/2014-06-12-angularjs-basic/</loc>
+    <lastmod>2014-06-12T01:22:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/angularjs/</loc>
+    <lastmod>2014-06-12T01:22:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.agileup.me/tags/vim/</loc>
-    <lastmod>2014-03-30T16:45:29+09:00</lastmod>
+    <loc>https://www.agileup.me/categories/dev/</loc>
+    <lastmod>2014-06-12T01:22:47+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.agileup.me/tags/webstorm/</loc>
-    <lastmod>2014-06-19T18:28:40+09:00</lastmod>
+    <loc>https://www.agileup.me/posts/2014-06-02-html5-presentation-tools/</loc>
+    <lastmod>2014-06-02T18:20:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/html5/</loc>
+    <lastmod>2014-06-02T18:20:15+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/presentation/</loc>
+    <lastmod>2014-06-02T18:20:15+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/posts/2014-05-28-wordpress-doesnt-work-wptouch-plugin-after-activate-cache-plugin/</loc>
+    <lastmod>2014-05-28T18:10:35+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/cache/</loc>
+    <lastmod>2014-05-28T18:10:35+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/plugin/</loc>
+    <lastmod>2014-05-28T18:10:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -309,8 +285,68 @@
   </url>
   
   <url>
-    <loc>https://www.agileup.me/</loc>
-    <lastmod>2019-03-30T01:17:06+09:00</lastmod>
+    <loc>https://www.agileup.me/posts/2014-05-26-opencv-detecting-and-matching-interest-points/</loc>
+    <lastmod>2014-05-26T17:52:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/opencv/</loc>
+    <lastmod>2014-05-26T17:52:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/posts/2014-05-05-403-forbidden-error-after-upgrade-php-5-5/</loc>
+    <lastmod>2014-05-05T17:47:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/php/</loc>
+    <lastmod>2014-05-05T17:47:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/brew/</loc>
+    <lastmod>2014-04-02T17:15:30+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/posts/2014-04-02-dyld-library-not-loaded/</loc>
+    <lastmod>2014-04-02T17:15:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/posts/2014-03-30-useful-vim-plugin/</loc>
+    <lastmod>2014-03-30T16:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/vim/</loc>
+    <lastmod>2014-03-30T16:45:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/posts/2014-03-17-make-own-blog/</loc>
+    <lastmod>2014-03-17T22:55:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/posts/2014-02-27-laravel-overview/</loc>
+    <lastmod>2014-02-27T21:44:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/laravel/</loc>
+    <lastmod>2014-02-27T21:44:55+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.agileup.me/tags/overview/</loc>
+    <lastmod>2014-02-27T21:44:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   

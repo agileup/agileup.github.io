@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Php on agileup</title>
+    <title>php on agileup</title>
     <link>https://www.agileup.me/tags/php/</link>
-    <description>Recent content in Php on agileup</description>
+    <description>Recent content in php on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 05 May 2014 17:47:40 +0900</lastBuildDate>
