@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="15ca1edb89b372ae9cd3f886bb77305a5fbfdf4d"/>
 
     <meta name="author" content="agileup">
     <meta name="description" content="MK Style">
@@ -28,8 +29,8 @@
         "accountablePerson" : "agileup",
         "copyrightHolder" : "agileup",
         "copyrightYear" : "2019",
-        "datePublished": "2019-06-15 16:20:51 \x2b0700 \x2b07",
-        "dateModified" : "2019-06-15 16:20:51 \x2b0700 \x2b07",
+        "datePublished": "2019-06-15 16:20:51 \x2b0700 \x2b0700",
+        "dateModified" : "2019-06-15 16:20:51 \x2b0700 \x2b0700",
         "url" : "https:\/\/www.agileup.me\/posts\/python-pipenv-chromedriver-version\/",
         "wordCount" : "296",
         "keywords" : [ "python","pipenv","selenium","chromedriver","homebrew","Blog" ]
@@ -78,7 +79,7 @@ selenium.common.exceptions.SessionNotCreatedException: Message: session not crea
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.56.3" />
   </head>
 
   <body class=" ">
@@ -177,8 +178,8 @@ selenium.common.exceptions.SessionNotCreatedException: Message: session not crea
 <li><a href="https://github.com/Homebrew/homebrew-cask">Homebrew Cask GitHub 저장소</a>에서 <code>Casks</code> 폴더 내 설치 필요한 패키지 검색</li>
 <li>필요 패키지 이름의 <code>*.rb</code> 파일 선택 후 해당 파일의 History 조회</li>
 <li>커밋 로그에 알맞은 버전 확인 후 해당 커밋 시점에 raw file link 복사</li>
-<li>특정 버전의 패키지 설치</li>
-</ol>
+
+<li><p>특정 버전의 패키지 설치</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># 기존 버전 삭제</span>
 $ brew cask uninstall <span class="nv">chromedriver</span>
 <span class="o">==</span>&gt; Uninstalling Cask <span class="nv">chromedriver</span>
@@ -206,7 +207,9 @@ From: https://github.com/Homebrew/homebrew-cask/blob/master/Casks/chromedriver.r
 <span class="o">==</span>&gt; Name
 <span class="nv">ChromeDriver</span>
 <span class="o">==</span>&gt; Artifacts
-chromedriver <span class="o">(</span>Binary<span class="o">)</span></code></pre></div>
+chromedriver <span class="o">(</span>Binary<span class="o">)</span></code></pre></div></li>
+</ol>
+
 <p>드라이버 버전을 낮추고 다시 python 프로젝트를 실행해보면 정상적으로 에러 없이 동작하는걸 확인할 수 있다.</p>
 
 <blockquote>
