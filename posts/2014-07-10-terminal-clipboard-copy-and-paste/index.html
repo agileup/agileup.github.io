@@ -19,9 +19,9 @@
              "@id": "https:\/\/www.agileup.me"
         },
         "articleSection" : "posts",
-        "name" : "OSX\/Linux 터미널에서 클립보드 복사 \x26 붙여넣기",
-        "headline" : "OSX\/Linux 터미널에서 클립보드 복사 \x26 붙여넣기",
-        "description" : "OSX 클립보드 복사는 pbcopy, 붙여넣기는 pbpaste\n이 둘을 터미널 기본 파이프라인과 잘 조합해서 사용\n\/\/ 복사 $ cat ~\/foo.csv | pbcopy \/\/ 붙여넣기 $ pbpaste \x26gt; ~\/bar.csv Linux(Ubuntu, Debian) 기본 패키지 저장소에 포함된 xclip 또는 xsel을 설치 후 사용\n\/\/ 1. 설치 $ sudo apt install xclip xsel \/\/ 2. alias 설정 $ vi ~\/.bashrc alias pbcopy=\x26#39;xclip -selection clipboard\x26#39; alias pbpaste=\x26#39;xclip -selection clipboard -o\x26#39; 또는 alias pbcopy=\x26#39;xsel --clipboard --input\x26#39; alias pbpaste=\x26#39;xsel --clipboard --output\x26#39; \/\/ 3.",
+        "name" : "OSX\/Linux 터미널에서 클립보드 복사 \u0026 붙여넣기",
+        "headline" : "OSX\/Linux 터미널에서 클립보드 복사 \u0026 붙여넣기",
+        "description" : "OSX 클립보드 복사는 pbcopy, 붙여넣기는 pbpaste\n이 둘을 터미널 기본 파이프라인과 잘 조합해서 사용\n\/\/ 복사 $ cat ~\/foo.csv | pbcopy \/\/ 붙여넣기 $ pbpaste \u0026gt; ~\/bar.csv Linux(Ubuntu, Debian) 기본 패키지 저장소에 포함된 xclip 또는 xsel을 설치 후 사용\n\/\/ 1. 설치 $ sudo apt install xclip xsel \/\/ 2. alias 설정 $ vi ~\/.bashrc alias pbcopy=\u0026#39;xclip -selection clipboard\u0026#39; alias pbpaste=\u0026#39;xclip -selection clipboard -o\u0026#39; 또는 alias pbcopy=\u0026#39;xsel --clipboard --input\u0026#39; alias pbpaste=\u0026#39;xsel --clipboard --output\u0026#39; \/\/ 3.",
         "inLanguage" : "en-US",
         "author" : "agileup",
         "creator" : "agileup",
@@ -29,8 +29,8 @@
         "accountablePerson" : "agileup",
         "copyrightHolder" : "agileup",
         "copyrightYear" : "2014",
-        "datePublished": "2014-07-10 20:03:19 \x2b0900 \x2b0900",
-        "dateModified" : "2014-07-10 20:03:19 \x2b0900 \x2b0900",
+        "datePublished": "2014-07-10 20:03:19 \u002b0900 KST",
+        "dateModified" : "2014-07-10 20:03:19 \u002b0900 KST",
         "url" : "https:\/\/www.agileup.me\/posts\/2014-07-10-terminal-clipboard-copy-and-paste\/",
         "wordCount" : "85",
         "keywords" : [ "osx","linux","clipboard","copyandpaste","pbcopy","pbpaste","Blog" ]
@@ -79,7 +79,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.56.3" />
+    <meta name="generator" content="Hugo 0.82.0" />
   </head>
 
   <body class=" ">
@@ -153,25 +153,20 @@
       </header>
 
       <div>
-        
-
-<h2 id="osx">OSX</h2>
-
+        <h2 id="osx">OSX</h2>
 <p>클립보드 복사는 <code>pbcopy</code>, 붙여넣기는 <code>pbpaste</code></p>
-
 <p>이 둘을 터미널 기본 파이프라인과 잘 조합해서 사용</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">// 복사
 $ cat ~/foo.csv <span class="p">|</span> pbcopy
 
 // 붙여넣기
-$ pbpaste &gt; ~/bar.csv</code></pre></div>
-<h2 id="linux-ubuntu-debian">Linux(Ubuntu, Debian)</h2>
-
+$ pbpaste &gt; ~/bar.csv
+</code></pre></div><h2 id="linuxubuntu-debian">Linux(Ubuntu, Debian)</h2>
 <p>기본 패키지 저장소에 포함된 <code>xclip</code> 또는 <code>xsel</code>을 설치 후 사용</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">// <span class="m">1</span>. 설치
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">// 1. 설치
 $ sudo apt install xclip xsel
 
-// <span class="m">2</span>. <span class="nb">alias</span> 설정
+// 2. <span class="nb">alias</span> 설정
 $ vi ~/.bashrc
 
 <span class="nb">alias</span> <span class="nv">pbcopy</span><span class="o">=</span><span class="s1">&#39;xclip -selection clipboard&#39;</span>
@@ -182,14 +177,12 @@ $ vi ~/.bashrc
 <span class="nb">alias</span> <span class="nv">pbcopy</span><span class="o">=</span><span class="s1">&#39;xsel --clipboard --input&#39;</span>
 <span class="nb">alias</span> <span class="nv">pbpaste</span><span class="o">=</span><span class="s1">&#39;xsel --clipboard --output&#39;</span>
 
-// <span class="m">3</span>. 적용
-$ <span class="nb">source</span> ~/.bashrc</code></pre></div>
-<p>사용법은 OSX와 동일</p>
-
+// 3. 적용
+$ <span class="nb">source</span> ~/.bashrc
+</code></pre></div><p>사용법은 OSX와 동일</p>
 <h2 id="reference">Reference</h2>
-
 <blockquote>
-<p><a href="https://apple.stackexchange.com/a/15322">https://apple.stackexchange.com/a/15322</a><br />
+<p><a href="https://apple.stackexchange.com/a/15322">https://apple.stackexchange.com/a/15322</a><br>
 <a href="https://www.ostechnix.com/how-to-use-pbcopy-and-pbpaste-commands-on-linux/">https://www.ostechnix.com/how-to-use-pbcopy-and-pbpaste-commands-on-linux/</a></p>
 </blockquote>
 
@@ -249,7 +242,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
   </body>
 

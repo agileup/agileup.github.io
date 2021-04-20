@@ -21,7 +21,7 @@
         "articleSection" : "posts",
         "name" : "git snippet",
         "headline" : "git snippet",
-        "description" : "개별파일 원복 git checkout -- \x26lt;파일\x26gt; : 워킹트리의 수정된 파일을 index에 있는 것으로 원복\ngit checkout HEAD -- \x26lt;파일명\x26gt; : 워킹트리의 수정된 파일을 HEAD에 있는 것으로 원복(이 경우 \x26ndash;는 생략가능)\ngit checkout FETCH_HEAD -- \x26lt;파일명\x26gt; : 워킹트리의 수정된 파일의 내용을 FETCH_HEAD에 있는 것으로 원복? merge?(이 경우 \x26ndash;는 생략가능)\nindex 추가 취소 git reset -- \x26lt;파일명\x26gt; : 해당 파일을 index에 추가한 것을 취소(unstage). 워킹트리의 변경내용은 보존됨. (\x26ndash;mixed 가 default)\ngit reset HEAD \x26lt;파일명\x26gt; : 위와 동일",
+        "description" : "개별파일 원복 git checkout -- \u0026lt;파일\u0026gt; : 워킹트리의 수정된 파일을 index에 있는 것으로 원복\ngit checkout HEAD -- \u0026lt;파일명\u0026gt; : 워킹트리의 수정된 파일을 HEAD에 있는 것으로 원복(이 경우 \u0026ndash;는 생략가능)\ngit checkout FETCH_HEAD -- \u0026lt;파일명\u0026gt; : 워킹트리의 수정된 파일의 내용을 FETCH_HEAD에 있는 것으로 원복? merge?(이 경우 \u0026ndash;는 생략가능)\nindex 추가 취소 git reset -- \u0026lt;파일명\u0026gt; : 해당 파일을 index에 추가한 것을 취소(unstage). 워킹트리의 변경내용은 보존됨. (\u0026ndash;mixed 가 default)\ngit reset HEAD \u0026lt;파일명\u0026gt; : 위와 동일",
         "inLanguage" : "en-US",
         "author" : "agileup",
         "creator" : "agileup",
@@ -29,8 +29,8 @@
         "accountablePerson" : "agileup",
         "copyrightHolder" : "agileup",
         "copyrightYear" : "2014",
-        "datePublished": "2014-08-08 18:58:40 \x2b0900 \x2b0900",
-        "dateModified" : "2014-08-08 18:58:40 \x2b0900 \x2b0900",
+        "datePublished": "2014-08-08 18:58:40 \u002b0900 KST",
+        "dateModified" : "2014-08-08 18:58:40 \u002b0900 KST",
         "url" : "https:\/\/www.agileup.me\/posts\/2014-08-08-git-tips\/",
         "wordCount" : "269",
         "keywords" : [ "git","tip","Blog" ]
@@ -80,7 +80,7 @@ git reset HEAD &lt;파일명&gt; : 위와 동일"/>
 
     
 
-    <meta name="generator" content="Hugo 0.56.3" />
+    <meta name="generator" content="Hugo 0.82.0" />
   </head>
 
   <body class=" ">
@@ -146,66 +146,39 @@ git reset HEAD &lt;파일명&gt; : 위와 동일"/>
       </header>
 
       <div>
-        
-
-<h2 id="개별파일-원복">개별파일 원복</h2>
-
+        <h2 id="개별파일-원복">개별파일 원복</h2>
 <p><code>git checkout  -- &lt;파일&gt;</code> : 워킹트리의 수정된 파일을 index에 있는 것으로 원복</p>
-
 <p><code>git checkout HEAD -- &lt;파일명&gt;</code> : 워킹트리의 수정된 파일을 HEAD에 있는 것으로 원복(이 경우 &ndash;는 생략가능)</p>
-
 <p><code>git checkout FETCH_HEAD -- &lt;파일명&gt;</code> : 워킹트리의 수정된 파일의 내용을 FETCH_HEAD에 있는 것으로 원복? merge?(이 경우 &ndash;는 생략가능)</p>
-
 <h2 id="index-추가-취소">index 추가 취소</h2>
-
 <p><code>git reset -- &lt;파일명&gt;</code> : 해당 파일을 index에 추가한 것을 취소(unstage). 워킹트리의 변경내용은 보존됨. (&ndash;mixed 가 default)</p>
-
 <p><code>git reset HEAD &lt;파일명&gt;</code> : 위와 동일</p>
-
 <h2 id="commit-취소">commit 취소</h2>
-
 <p><code>git reset HEAD^</code> : 최종 커밋을 취소. 워킹트리는 보존됨. (커밋은 했으나 push하지 않은 경우 유용)</p>
-
 <p><code>git reset HEAD~2</code> : 마지막 2개의 커밋을 취소. 워킹트리는 보존됨.</p>
-
 <p><code>git reset --hard HEAD~2</code> : 마지막 2개의 커밋을 취소. index 및 워킹트리 모두 원복됨.</p>
-
 <p><code>git reset --hard ORIG_HEAD</code> : 머지한 것을 이미 커밋했을 때,  그 커밋을 취소. (잘못된 머지를 이미 커밋한 경우 유용)</p>
-
 <p><code>git revert HEAD</code> : HEAD에서 변경한 내역을 취소하는 새로운 커밋 발행(undo commit). (커밋을 이미 push 해버린 경우 유용)</p>
-
 <h2 id="워킹트리-전체-원복">워킹트리 전체 원복</h2>
-
 <p><code>git reset --hard HEAD</code> : 워킹트리 전체를 마지막 커밋 상태로 되돌림. 마지막 커밋이후의 워킹트리와 index의 수정사항 모두 사라짐. (변경을 커밋하지 않았다면 유용)</p>
-
 <p><code>git checkout HEAD</code> : 워킹트리의 모든 수정된 파일의 내용을 HEAD로 원복.</p>
-
 <p><code>git checkout -f</code> : 변경된 파일들을 HEAD로 모두 원복(아직 커밋하지 않은 워킹트리와 index 의 수정사항 모두 사라짐. 신규추가 파일 제외)</p>
-
 <blockquote>
-<p>reset 옵션<br />
-<code>--soft</code>: index 보존, 워킹트리 보존. 즉 모두 보존.<br />
-<code>--mixed</code>: index 취소, 워킹트리만 보존 (기본 옵션)<br />
+<p>reset 옵션<br>
+<code>--soft</code>: index 보존, 워킹트리 보존. 즉 모두 보존.<br>
+<code>--mixed</code>: index 취소, 워킹트리만 보존 (기본 옵션)<br>
 <code>--hard</code>: index 취소, 워킹트리 취소. 즉 모두 취소.</p>
 </blockquote>
-
 <h2 id="untracked-파일-제거">untracked 파일 제거</h2>
-
 <blockquote>
-<p><code>git clean -f</code><br />
+<p><code>git clean -f</code><br>
 <code>git clean -f -d</code>: 디렉토리까지 제거</p>
 </blockquote>
-
 <h2 id="force-a-pull-to-overwrite-everything">force a pull to overwrite everything</h2>
-
 <p><code>git fetch [remote_repo] [branch]</code></p>
-
 <p><code>git reset —hard FETCH_HEAD</code></p>
-
 <p><code>git clean -df</code></p>
-
 <h2 id="reference">Reference</h2>
-
 <blockquote>
 <p><a href="https://git-scm.com/book/ko/v1/Git-%EB%8F%84%EA%B5%AC-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EB%8B%A8%EC%9E%A5%ED%95%98%EA%B8%B0">Git 도구 - 히스토리 단장하기</a></p>
 </blockquote>
@@ -266,7 +239,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
   </body>
 

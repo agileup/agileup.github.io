@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>book on agileup</title>
@@ -6,23 +6,19 @@
     <description>Recent content in book on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Oct 2014 23:25:40 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.agileup.me/tags/book/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 22 Oct 2014 23:25:40 +0900</lastBuildDate><atom:link href="https://www.agileup.me/tags/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Book] CleanCode</title>
       <link>https://www.agileup.me/posts/2014-10-22-book-cleancode/</link>
       <pubDate>Wed, 22 Oct 2014 23:25:40 +0900</pubDate>
       
       <guid>https://www.agileup.me/posts/2014-10-22-book-cleancode/</guid>
-      <description>Chapter 03. 함수  작게 만들어라
- 중첩구조가 생기면 고민하자 들여쓰기 수준은 1,2단을 넘지 말자  한 가지만 해라
- 의미있는 네이밍으로 판별  함수 당 추상화 수준은 하나로
- Switch 문
- AbstractFactory?    함수를 만드는 첫 번째 규칙은 ‘작게!’다. 함수를 만드는 두 번때 규칙은 ‘더 작게!’다.
-각 함수가 너무도 명백했다. 각 함수가 이야기 하나를 표현했다. 각 함수가 너무도 멋지게 다음 무대를 준비했다. 바로 이것이 답이다.</description>
+      <description>Chapter 03. 함수   작게 만들어라
+ 중첩구조가 생기면 고민하자 들여쓰기 수준은 1,2단을 넘지 말자    한 가지만 해라
+ 의미있는 네이밍으로 판별    함수 당 추상화 수준은 하나로
+  Switch 문
+ AbstractFactory?     함수를 만드는 첫 번째 규칙은 ‘작게!’다. 함수를 만드는 두 번때 규칙은 ‘더 작게!’다.
+각 함수가 너무도 명백했다. 각 함수가 이야기 하나를 표현했다. 각 함수가 너무도 멋지게 다음 무대를 준비했다.</description>
     </item>
     
   </channel>

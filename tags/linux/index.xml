@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on agileup</title>
@@ -6,11 +6,7 @@
     <description>Recent content in linux on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Jul 2014 20:03:19 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.agileup.me/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 10 Jul 2014 20:03:19 +0900</lastBuildDate><atom:link href="https://www.agileup.me/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OSX/Linux 터미널에서 클립보드 복사 &amp; 붙여넣기</title>
       <link>https://www.agileup.me/posts/2014-07-10-terminal-clipboard-copy-and-paste/</link>

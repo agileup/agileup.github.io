@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on agileup</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Posts on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Jun 2019 16:20:51 +0700</lastBuildDate>
-    
-	<atom:link href="https://www.agileup.me/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Jun 2019 16:20:51 +0700</lastBuildDate><atom:link href="https://www.agileup.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>python selenium 개발 chromedriver 버전 문제 해결</title>
       <link>https://www.agileup.me/posts/python-pipenv-chromedriver-version/</link>
@@ -42,7 +38,7 @@ Reference
       <pubDate>Sat, 03 Jan 2015 23:31:57 +0900</pubDate>
       
       <guid>https://www.agileup.me/posts/2015-01-03-push-notification-tips-for-apns-gcm/</guid>
-      <description>MESSAGE SIZE  APN이 허용하는 최대 PAYLOAD 크기는 256 BYTES(http://goo.gl/vYsOJq) 라서 DEVICE TOKEN 과, 부가 정보 등 JSON의 KEY 값을 제외하면 실제 메시지 길이는 그렇게 여유 있지 않음. 서버에서 꼭 필요한 데이터를 제외한 잔여 크기 만큼 계산해 보여줄 메시지(ALERT)를 잘라내야 함. GCM은 4096 BYTES 까지 허용하기 때문에 푸시로 보낼 데이터의 내용을 감안 했을때 거의 제한이 없다고 봐도 됨.  ERROR HANDLING APN  TRANSMISSION ERROR를 전송 결과로 받을 수 있음.</description>
+      <description>MESSAGE SIZE  APN이 허용하는 최대 PAYLOAD 크기는 256 BYTES(http://goo.gl/vYsOJq) 라서 DEVICE TOKEN 과, 부가 정보 등 JSON의 KEY 값을 제외하면 실제 메시지 길이는 그렇게 여유 있지 않음. 서버에서 꼭 필요한 데이터를 제외한 잔여 크기 만큼 계산해 보여줄 메시지(ALERT)를 잘라내야 함. GCM은 4096 BYTES 까지 허용하기 때문에 푸시로 보낼 데이터의 내용을 감안 했을때 거의 제한이 없다고 봐도 됨.  ERROR HANDLING APN  TRANSMISSION ERROR를 전송 결과로 받을 수 있음. ERROR CODE와 함께 푸시 보낸 정보도 함께 들어오는데 여기서 코드가 8번이 &amp;ldquo;INVALID TOKEN&amp;quot;에 해당하니 해당 토큰은 저장소에서 삭제해도 무방.</description>
     </item>
     
     <item>
@@ -51,12 +47,12 @@ Reference
       <pubDate>Wed, 22 Oct 2014 23:25:40 +0900</pubDate>
       
       <guid>https://www.agileup.me/posts/2014-10-22-book-cleancode/</guid>
-      <description>Chapter 03. 함수  작게 만들어라
- 중첩구조가 생기면 고민하자 들여쓰기 수준은 1,2단을 넘지 말자  한 가지만 해라
- 의미있는 네이밍으로 판별  함수 당 추상화 수준은 하나로
- Switch 문
- AbstractFactory?    함수를 만드는 첫 번째 규칙은 ‘작게!’다. 함수를 만드는 두 번때 규칙은 ‘더 작게!’다.
-각 함수가 너무도 명백했다. 각 함수가 이야기 하나를 표현했다. 각 함수가 너무도 멋지게 다음 무대를 준비했다. 바로 이것이 답이다.</description>
+      <description>Chapter 03. 함수   작게 만들어라
+ 중첩구조가 생기면 고민하자 들여쓰기 수준은 1,2단을 넘지 말자    한 가지만 해라
+ 의미있는 네이밍으로 판별    함수 당 추상화 수준은 하나로
+  Switch 문
+ AbstractFactory?     함수를 만드는 첫 번째 규칙은 ‘작게!’다. 함수를 만드는 두 번때 규칙은 ‘더 작게!’다.
+각 함수가 너무도 명백했다. 각 함수가 이야기 하나를 표현했다. 각 함수가 너무도 멋지게 다음 무대를 준비했다.</description>
     </item>
     
     <item>
@@ -101,9 +97,7 @@ git reset HEAD &amp;lt;파일명&amp;gt; : 위와 동일</description>
       <pubDate>Thu, 12 Jun 2014 01:22:47 +0900</pubDate>
       
       <guid>https://www.agileup.me/posts/2014-06-12-angularjs-basic/</guid>
-      <description>동작 순서  브라우저가 html을 로드 (DOM을 파싱한다.) Angular.js를 로드한다 DOM Content Loaded Event를 기다린다. DOM이 모두 로드되면 ng-app 지시자를 찾는다. ng-app에서는 dependency injection 을 위해 사용되는 $injector를 생성한다. injector 지시어는 어플리케이션의 모델을 위한 컨텍스트가 되는 루트 스코프를 생성한다. 최종적으로 ng-app을 기준으로 하위DOM을 컴파일하고 rootScope와 링크시킨다.  기본 개념  Scope
- Scope는 모델 변경을 감지하고 표현하기위한 책임을 갖는다 Scope는 DOM 구조와 가깝게 하이어라키 구조를 갖는다  Model
- 모델은 화면 템플릿에 합쳐지는 데이터를 가지고 있는 일반 자바스크립트 객체이다.</description>
+      <description>동작 순서  브라우저가 html을 로드 (DOM을 파싱한다.) Angular.js를 로드한다 DOM Content Loaded Event를 기다린다. DOM이 모두 로드되면 ng-app 지시자를 찾는다. ng-app에서는 dependency injection 을 위해 사용되는 $injector를 생성한다. injector 지시어는 어플리케이션의 모델을 위한 컨텍스트가 되는 루트 스코프를 생성한다. 최종적으로 ng-app을 기준으로 하위DOM을 컴파일하고 rootScope와 링크시킨다.  기본 개념  Scope   Scope는 모델 변경을 감지하고 표현하기위한 책임을 갖는다 Scope는 DOM 구조와 가깝게 하이어라키 구조를 갖는다  Model   모델은 화면 템플릿에 합쳐지는 데이터를 가지고 있는 일반 자바스크립트 객체이다.</description>
     </item>
     
     <item>
@@ -140,8 +134,7 @@ git reset HEAD &amp;lt;파일명&amp;gt; : 위와 동일</description>
       <guid>https://www.agileup.me/posts/2014-05-26-opencv-detecting-and-matching-interest-points/</guid>
       <description>OpenCV 2 Computer Vision Application Programming Cookbook
 Chapter 8. Detecting and Matching Interests Points
- Summary  Detecting Harris corners Detecting FAST features Detecting the scale-invariant SURF features Describing SURF features
-  컴퓨터 비전에서, Interest points(keypoints, feature points)는 객체 인식, 영상 정합, 비주얼 트래킹, 3D 복원 등 수많은 문제를 해결하는데 사용된다.
+  Summary  Detecting Harris corners Detecting FAST features Detecting the scale-invariant SURF features Describing SURF features  컴퓨터 비전에서, Interest points(keypoints, feature points)는 객체 인식, 영상 정합, 비주얼 트래킹, 3D 복원 등 수많은 문제를 해결하는데 사용된다.
 영상 전체를 분석 &amp;lt; 몇몇의 특정 포인트들을 선택해 그 점들에 대해서 분석
 이 챕터에서 몇가지 Interest point detector를 소개하고, 어떻게 image matching에 사용되는지 소개한다.</description>
     </item>
@@ -180,7 +173,7 @@ $ brew reinstall php55 끝</description>
       <guid>https://www.agileup.me/posts/2014-03-30-useful-vim-plugin/</guid>
       <description>PUG 한상헌님 소개로 알게된 각종 vim 플러그인을 실제로 설치하고 사용해보면서 정리한 문서입니다.
 환경: OS X Mavericks, iTerm2, homebrew
- vim에 각종 플러그인을 설치함으로써 개발 편의성과 생산성을 높일 수 있습니다. 물론 VisualStudio, XCode, Eclipse 등 각종 IDE를 완전히 대체하기엔 무리가 있겠지만, 그럼에도 불구하고 여러 플러그인 설정을 통해 vim에서도 생산성을 끌어올릴 수 있습니다.
+  vim에 각종 플러그인을 설치함으로써 개발 편의성과 생산성을 높일 수 있습니다. 물론 VisualStudio, XCode, Eclipse 등 각종 IDE를 완전히 대체하기엔 무리가 있겠지만, 그럼에도 불구하고 여러 플러그인 설정을 통해 vim에서도 생산성을 끌어올릴 수 있습니다.
 플러그인을 설치하고 적용하는 방법은 크게 2가지가 있습니다.
  pathogen vundle  Indent-Guides  인덴트(스페이스, 탭) 부분을 알기 쉽게 알맞은 색으로 하이라이팅 합니다.</description>
     </item>
@@ -191,8 +184,8 @@ $ brew reinstall php55 끝</description>
       <pubDate>Mon, 17 Mar 2014 22:55:47 +0900</pubDate>
       
       <guid>https://www.agileup.me/posts/2014-03-17-make-own-blog/</guid>
-      <description>  이미 유명하거나 새롭게 주목받고 있는 블로그 서비스들을 소개합니다.
- Postach  http://postach.io/ 에버노트와 연동  Ghost  http://docs.ghost.org/installation/  Medium  개인적으로는 컨텐츠 생산보다 소비에 최적화된 플랫폼인듯 자체 호스팅 지원  Wordpress  설치형: wordpress.org 서비스형: wordpress.com  Harupress  http://haroopress.com/ 5분만에 설치하는 블로그 엔진 웹 서버와 데이터베이스가 필요 없는 초 간편 컨텐츠 메니징 시스템  </description>
+      <description> 이미 유명하거나 새롭게 주목받고 있는 블로그 서비스들을 소개합니다.
+  Postach  http://postach.io/ 에버노트와 연동  Ghost  http://docs.ghost.org/installation/  Medium  개인적으로는 컨텐츠 생산보다 소비에 최적화된 플랫폼인듯 자체 호스팅 지원  Wordpress  설치형: wordpress.org 서비스형: wordpress.com  Harupress  http://haroopress.com/ 5분만에 설치하는 블로그 엔진 웹 서버와 데이터베이스가 필요 없는 초 간편 컨텐츠 메니징 시스템  </description>
     </item>
     
     <item>
@@ -201,10 +194,10 @@ $ brew reinstall php55 끝</description>
       <pubDate>Thu, 27 Feb 2014 21:44:55 +0900</pubDate>
       
       <guid>https://www.agileup.me/posts/2014-02-27-laravel-overview/</guid>
-      <description>  https://laravel.com/ Taylor Otwell  특징  인증, 라우팅, 세션, 캐싱 등 Composer, FrontController, MVC, IOC-DI, UnitTest  설치  Composer 사용 git clone  설정  app.php, database.php
- VirtualHost 설정 &amp;gt; 프로젝트폴더/public
- app/storage 폴더 권한 777
-  MVC Routing  app/route.php method, filter, group 지원 - 문서  Artisan CLI  php artisan serve php artisan route php artisan controller:make [컨트롤러이름]  Study 발표자료  정양파님 - Route 발표자료 윤종선님 - Form &amp;amp; View 발표자료  </description>
+      <description> https://laravel.com/ Taylor Otwell   특징  인증, 라우팅, 세션, 캐싱 등 Composer, FrontController, MVC, IOC-DI, UnitTest  설치  Composer 사용 git clone  설정   app.php, database.php
+  VirtualHost 설정
+   프로젝트폴더/public
+  app/storage 폴더 권한 777  MVC Routing  app/route.php method, filter, group 지원 - 문서  Artisan CLI  php artisan serve php artisan route php artisan controller:make [컨트롤러이름]  Study 발표자료  정양파님 - Route 발표자료 윤종선님 - Form &amp;amp; View 발표자료  </description>
     </item>
     
   </channel>

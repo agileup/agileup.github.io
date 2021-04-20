@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>App Showcase on agileup</title>
+    <link>https://www.agileup.me/app/</link>
+    <description>Recent content in App Showcase on agileup</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Jul 2018 22:55:05 +0900</lastBuildDate><atom:link href="https://www.agileup.me/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple Timer</title>
+      <link>https://www.agileup.me/app/timer/</link>
+      <pubDate>Sun, 01 Jul 2018 22:55:05 +0900</pubDate>
+      
+      <guid>https://www.agileup.me/app/timer/</guid>
+      <description>Simple Timer</description>
+    </item>
+    
+  </channel>
+</rss>

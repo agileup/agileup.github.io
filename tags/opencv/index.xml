@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>opencv on agileup</title>
@@ -6,11 +6,7 @@
     <description>Recent content in opencv on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 May 2014 17:52:55 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.agileup.me/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 26 May 2014 17:52:55 +0900</lastBuildDate><atom:link href="https://www.agileup.me/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[OpenCV] Detecting and Matching Interest Points</title>
       <link>https://www.agileup.me/posts/2014-05-26-opencv-detecting-and-matching-interest-points/</link>
@@ -19,8 +15,7 @@
       <guid>https://www.agileup.me/posts/2014-05-26-opencv-detecting-and-matching-interest-points/</guid>
       <description>OpenCV 2 Computer Vision Application Programming Cookbook
 Chapter 8. Detecting and Matching Interests Points
- Summary  Detecting Harris corners Detecting FAST features Detecting the scale-invariant SURF features Describing SURF features
-  컴퓨터 비전에서, Interest points(keypoints, feature points)는 객체 인식, 영상 정합, 비주얼 트래킹, 3D 복원 등 수많은 문제를 해결하는데 사용된다.
+  Summary  Detecting Harris corners Detecting FAST features Detecting the scale-invariant SURF features Describing SURF features  컴퓨터 비전에서, Interest points(keypoints, feature points)는 객체 인식, 영상 정합, 비주얼 트래킹, 3D 복원 등 수많은 문제를 해결하는데 사용된다.
 영상 전체를 분석 &amp;lt; 몇몇의 특정 포인트들을 선택해 그 점들에 대해서 분석
 이 챕터에서 몇가지 Interest point detector를 소개하고, 어떻게 image matching에 사용되는지 소개한다.</description>
     </item>

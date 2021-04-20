@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pm2 on agileup</title>
@@ -6,11 +6,7 @@
     <description>Recent content in pm2 on agileup</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Jan 2015 00:11:36 +0900</lastBuildDate>
-    
-	<atom:link href="https://www.agileup.me/tags/pm2/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 19 Jan 2015 00:11:36 +0900</lastBuildDate><atom:link href="https://www.agileup.me/tags/pm2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[NodeJS] deploy with Nginx and PM2</title>
       <link>https://www.agileup.me/posts/2015-01-19-nodejs-deploy-with-nginx-and-pm2/</link>
